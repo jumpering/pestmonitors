@@ -1,0 +1,11 @@
+@startuml
+title Domain model
+class User
+class Client
+class Headquarter
+class Maps
+class GoogleMaps
+class Image
+class Sensor
+class RegisterLog
+@enduml
