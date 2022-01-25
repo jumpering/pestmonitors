@@ -1,0 +1,88 @@
+@startuml
+title UserContextDiagram
+state INITIAL
+state CLIENT_CREATED
+state HEADQUARTER_CREATED
+state MAP_CREATED
+state ADD_SENSOR
+state OPENED_APPLICATION
+
+[*] --> INITIAL
+
+INITIAL --> OPENED_APPLICATION
+note on link
+    Login (not on this version)
+end note
+
+OPENED_APPLICATION --> CLIENT_CREATED
+    note on link
+        CreateClient
+        CreateSensor
+    end note
+CLIENT_CREATED --> CLIENT_CREATED
+note on link
+    Read
+    Update
+    Delete
+end note
+
+OPENED_APPLICATION --> HEADQUARTER_CREATED
+    note on link
+        CreateHeadquarter
+        CreateSensor
+    end note
+
+HEADQUARTER_CREATED --> HEADQUARTER_CREATED
+    note on link
+        Read
+        Update
+        Delete
+    end note
+
+OPENED_APPLICATION --> MAP_CREATED
+    note on link
+        CreateMap
+        CreateSensor
+    end note
+
+MAP_CREATED --> MAP_CREATED
+    note on link
+        Read
+        Update
+        Delete
+    end note
+
+OPENED_APPLICATION --> ADD_SENSOR
+    note on link
+        CreateSensor
+        AddSensor
+    end note
+
+ADD_SENSOR --> ADD_SENSOR
+    note on link
+        Read
+        Update
+        Delete
+    end note
+
+CLIENT_CREATED --> [*]
+      note on link
+          Logout (not on this version)
+      end note
+
+HEADQUARTER_CREATED --> [*]
+      note on link
+          Logout (not on this version)
+      end note
+
+MAP_CREATED --> [*]
+      note on link
+          Logout (not on this version)
+      end note
+
+ADD_SENSOR --> [*]
+      note on link
+          Logout (not on this version)
+      end note
+
+@enduml

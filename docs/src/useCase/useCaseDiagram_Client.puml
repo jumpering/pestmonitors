@@ -1,0 +1,23 @@
+@startuml
+allowmixing
+namespace clientsManagent{
+
+title UseCases
+left to right direction
+actor User
+
+usecase CreateClient
+usecase ReadClient
+usecase UpdateClient
+usecase DeleteClient
+
+User --> CreateClient
+CreateClient ..> ReadClient : "<<include>>"
+'User --> ReadClient
+User --> UpdateClient
+UpdateClient ..> ReadClient : "<<include>>"
+User --> DeleteClient
+DeleteClient ..> ReadClient : "<<include>>"
+
+}
+@enduml

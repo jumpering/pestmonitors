@@ -1,0 +1,54 @@
+@startuml
+title UseCases
+left to right direction
+actor User
+
+usecase CreateSensor
+usecase ReadSensor
+usecase UpdateSensor
+usecase DeleteSensor
+
+usecase CreateClient
+usecase ReadClient
+usecase UpdateClient
+usecase DeleteClient
+
+usecase CreateHeadquarter
+usecase ReadHeadquarter
+usecase UpdateHeadquarter
+usecase DeleteHeadquarter
+
+usecase CreateMap
+usecase ReadMap
+usecase UpdateMap
+usecase DeleteMap
+
+
+User --> CreateSensor
+CreateSensor ..> ReadSensor  : "<<include>>"
+'User --> ReadSensor
+User --> UpdateSensor
+UpdateSensor ..> ReadSensor  : "<<include>>"
+User --> DeleteSensor
+DeleteSensor ..> ReadSensor  : "<<include>>"
+
+
+User --> CreateClient
+CreateClient ..> ReadClient : "<<include>>"
+'User --> ReadClient
+User --> UpdateClient
+UpdateClient ..> ReadClient : "<<include>>"
+User --> DeleteClient
+DeleteClient ..> ReadClient : "<<include>>"
+
+User --> CreateHeadquarter
+User --> ReadHeadquarter
+User --> UpdateHeadquarter
+User --> DeleteHeadquarter
+
+User --> CreateMap
+User --> ReadMap
+User --> UpdateMap
+User --> DeleteMap
+
+@enduml

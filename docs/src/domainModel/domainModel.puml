@@ -3,9 +3,18 @@ title Domain model
 class User
 class Client
 class Headquarter
-class Maps
+class Map
 class GoogleMaps
 class Image
 class Sensor
 class RegisterLog
+
+User "1" *--> "n" Sensor
+User "1" *--> "n" Client
+Client "1" *--> "n" Headquarter
+Headquarter "1" *--> "n" Map
+Map -down-|> GoogleMaps
+Map -down-|> Image
+
+Sensor ..> RegisterLog
 @enduml
