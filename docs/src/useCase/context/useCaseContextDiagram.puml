@@ -1,11 +1,12 @@
 @startuml
 title UserContextDiagram
 state INITIAL
+state OPENED_APPLICATION
 state CLIENT_CREATED
 state HEADQUARTER_CREATED
 state MAP_CREATED
-state ADD_SENSOR
-state OPENED_APPLICATION
+state SENSOR_CREATED
+state STATS_GENERATED
 
 [*] --> INITIAL
 
@@ -17,52 +18,50 @@ end note
 OPENED_APPLICATION --> CLIENT_CREATED
     note on link
         CreateClient
-        CreateSensor
     end note
 CLIENT_CREATED --> CLIENT_CREATED
 note on link
-    Read
-    Update
-    Delete
+    ReadClient
+    UpdateClient
+    DeleteClient
 end note
 
-OPENED_APPLICATION --> HEADQUARTER_CREATED
+CLIENT_CREATED --> HEADQUARTER_CREATED
     note on link
         CreateHeadquarter
-        CreateSensor
     end note
 
 HEADQUARTER_CREATED --> HEADQUARTER_CREATED
     note on link
-        Read
-        Update
-        Delete
+        ReadHeadquarter
+        UpdateHeadquarter
+        DeleteHeadquarter
     end note
 
-OPENED_APPLICATION --> MAP_CREATED
+HEADQUARTER_CREATED --> MAP_CREATED
     note on link
         CreateMap
-        CreateSensor
     end note
 
 MAP_CREATED --> MAP_CREATED
     note on link
-        Read
-        Update
-        Delete
+        ReadMap
+        UpdateMap
+        DeleteMap
     end note
 
-OPENED_APPLICATION --> ADD_SENSOR
+OPENED_APPLICATION --> SENSOR_CREATED
     note on link
         CreateSensor
-        AddSensor
     end note
 
-ADD_SENSOR --> ADD_SENSOR
+SENSOR_CREATED --> SENSOR_CREATED
     note on link
-        Read
-        Update
-        Delete
+        ReadSensor
+        UpdateSensor
+        DeleteSensor
+        AddSensorToMap
+        AddSensorToStock
     end note
 
 CLIENT_CREATED --> [*]
@@ -80,7 +79,14 @@ MAP_CREATED --> [*]
           Logout (not on this version)
       end note
 
-ADD_SENSOR --> [*]
+SENSOR_CREATED --> STATS_GENERATED
+       note on link
+           ShowState
+           PrintState
+           SendState
+       end note
+
+STATS_GENERATED --> [*]
       note on link
           Logout (not on this version)
       end note

@@ -7,6 +7,12 @@ usecase CreateSensor
 usecase ReadSensor
 usecase UpdateSensor
 usecase DeleteSensor
+usecase AddSensorToMap
+usecase AddSensorToStock
+
+usecase ShowState
+usecase PrintState
+usecase SendState
 
 usecase CreateClient
 usecase ReadClient
