@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="1176px" preserveAspectRatio="none" style="width:664px;height:1176px;background:#FFFFFF;" version="1.1" viewBox="0 0 664 1176" width="664px" zoomAndPan="magnify"><defs><filter height="300%" id="fx3mhoptzlho4" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="18" lengthAdjust="spacing" textLength="83" x="284.0842" y="18.6855">UseCases</text><!--MD5=[fee662a292a0353a69bd162820bae93b]
+entity User--><ellipse cx="89" cy="458.1406" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M89,466.1406 L89,493.1406 M76,474.1406 L102,474.1406 M89,493.1406 L76,508.1406 M89,493.1406 L102,508.1406 " fill="none" filter="url(#fx3mhoptzlho4)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="74.5" y="528.1738">User</text><ellipse cx="317.1531" cy="45.0712" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="70.1531" ry="16.4306" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="88" x="270.1531" y="49.5878">CreateSensor</text><ellipse cx="585.0842" cy="112.9575" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="67.0842" ry="15.8168" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="542.5842" y="117.4741">ReadSensor</text><ellipse cx="316.8567" cy="113.212" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="70.8567" ry="16.5713" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="90" x="268.8567" y="117.7286">UpdateSensor</text><ellipse cx="316.957" cy="180.932" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="69.457" ry="16.2914" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="86" x="270.957" y="185.4486">DeleteSensor</text><ellipse cx="88.8789" cy="1006.0164" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="79.8789" ry="18.3758" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="114" x="30.8373" y="1010.043">AddSensorToMap</text><ellipse cx="89.169" cy="1079.1744" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="83.169" ry="19.0338" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="28.169" y="1082.9029">AddSensorToStock</text><ellipse cx="88.9297" cy="1149.219" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="59.4297" ry="15.5784" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="67" x="52.4297" y="1153.7356">ShowState</text><ellipse cx="317.2356" cy="1006.1898" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="55.7356" ry="15.5492" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="62" x="283.2356" y="1010.7064">PrintState</text><ellipse cx="317.1908" cy="1072.2135" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="58.6908" ry="15.5728" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="66" x="281.1908" y="1076.7301">SendState</text><ellipse cx="317.0842" cy="248.9575" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="67.0842" ry="15.8168" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="79" x="274.5842" y="253.4741">CreateClient</text><ellipse cx="585.1463" cy="316.2348" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="61.6463" ry="15.5942" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="547.1463" y="320.7514">ReadClient</text><ellipse cx="316.7517" cy="316.091" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="67.7517" ry="15.9503" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="81" x="273.2517" y="320.6076">UpdateClient</text><ellipse cx="316.9254" cy="383.3257" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="66.4254" ry="15.6851" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="77" x="275.4254" y="387.8423">DeleteClient</text><ellipse cx="317.169" cy="453.1744" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="83.169" ry="19.0338" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="122" x="256.169" y="456.9029">CreateHeadquarter</text><ellipse cx="316.9775" cy="525.9361" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="79.4775" ry="18.2955" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="113" x="259.256" y="530.0115">ReadHeadquarter</text><ellipse cx="317.0066" cy="599.3419" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="84.0066" ry="19.2013" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="124" x="255.0066" y="603.0705">UpdateHeadquarter</text><ellipse cx="316.8351" cy="672.0077" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="82.3351" ry="18.867" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="120" x="256.8351" y="675.7362">DeleteHeadquarter</text><ellipse cx="317.1463" cy="742.2348" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="61.6463" ry="15.5942" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="70" x="279.1463" y="746.7514">CreateMap</text><ellipse cx="316.9968" cy="808.1835" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="54.9968" ry="15.5429" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="61" x="283.4968" y="812.7001">ReadMap</text><ellipse cx="317.1242" cy="874.2448" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="63.1242" ry="15.6042" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="72" x="278.1242" y="878.7614">UpdateMap</text><ellipse cx="317.1685" cy="940.2244" fill="#FEFECE" filter="url(#fx3mhoptzlho4)" rx="60.1685" ry="15.5838" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="68" x="280.1685" y="944.741">DeleteMap</text><!--MD5=[b92698f1e23482974d7182b61e82bc01]
+link User to CreateSensor--><path d="M92.9,448.4606 C100.79,366.5706 129.64,183.5906 233,79.1406 C241.53,70.5206 252.55,64.0006 263.76,59.1006 " fill="none" id="User-to-CreateSensor" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="268.57,57.0906,258.7242,56.8447,263.9517,59.0066,261.7898,64.234,268.57,57.0906" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[04631db35cc2553db957e7e166975fd6]
+link CreateSensor to ReadSensor--><path d="M365.25,57.2206 C412.59,69.3206 485.2,87.8806 533.62,100.2606 " fill="none" id="CreateSensor-to-ReadSensor" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="538.52,101.5106,530.7799,95.4204,533.6735,100.2811,528.8127,103.1747,538.52,101.5106" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="432" y="71.6357">«include»</text><!--MD5=[8ca85c4e4cfbf2dc2c2bee0ba0501b46]
+link User to UpdateSensor--><path d="M96.68,448.4806 C110.14,377.5006 146.9,232.5706 233,147.1406 C241.51,138.7006 252.41,132.2506 263.49,127.3806 " fill="none" id="User-to-UpdateSensor" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="268.25,125.3806,258.4031,125.1866,263.6418,127.3209,261.5075,132.5597,268.25,125.3806" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[69ff530d038647cba136257ba7a3c3c7]
+link UpdateSensor to ReadSensor--><path d="M388.24,113.1406 C426.68,113.1406 474.21,113.1406 512.81,113.1406 " fill="none" id="UpdateSensor-to-ReadSensor" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="517.95,113.1406,508.95,109.1406,512.95,113.1406,508.95,117.1406,517.95,113.1406" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="432" y="109.6357">«include»</text><!--MD5=[7e4926daeca51387cc70678757fa21c0]
+link User to DeleteSensor--><path d="M101.57,448.5906 C120.07,389.2706 161.67,280.2706 233,215.1406 C242.16,206.7806 253.65,200.3306 265.13,195.4106 " fill="none" id="User-to-DeleteSensor" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270.05,193.4006,260.2052,193.118,265.4245,195.2993,263.2432,200.5187,270.05,193.4006" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[f333aa09365d3f7e70c1785c5f1994ea]
+link DeleteSensor to ReadSensor--><path d="M366.44,169.4806 C400.49,161.2006 447.09,149.7306 488,139.1406 C503.47,135.1306 520.3,130.6306 535.48,126.5106 " fill="none" id="DeleteSensor-to-ReadSensor" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="540.57,125.1206,530.8343,123.6321,535.7465,126.4374,532.9412,131.3497,540.57,125.1206" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="432" y="135.6357">«include»</text><!--MD5=[0a32b9f77a3d8b86407da9b2a4bf111f]
+link User to CreateClient--><path d="M103.67,459.7806 C125.19,415.1006 171,331.6106 233,282.1406 C243.06,274.1106 255.32,267.8206 267.29,262.9906 " fill="none" id="User-to-CreateClient" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="272.04,261.1406,262.2019,260.6804,267.3811,262.9556,265.1059,268.1348,272.04,261.1406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[2e1be61c36506150314c27e239d7f0db]
+link CreateClient to ReadClient--><path d="M363.73,260.6606 C411.69,272.7406 486.77,291.6506 535.69,303.9706 " fill="none" id="CreateClient-to-ReadClient" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="540.63,305.2206,532.8731,299.1518,535.7801,304.0046,530.9274,306.9116,540.63,305.2206" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="432" y="275.6357">«include»</text><!--MD5=[6be929dcd23e2a4a4306772d4b3ff846]
+link User to UpdateClient--><path d="M103.74,472.8906 C127.44,444.0906 178.72,385.8406 233,350.1406 C244.7,342.4406 258.43,335.9606 271.31,330.7806 " fill="none" id="User-to-UpdateClient" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="276.02,328.9306,266.1807,328.4966,271.3659,330.758,269.1045,335.9432,276.02,328.9306" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[da1ed32dcb344277d95ac08092001aa4]
+link UpdateClient to ReadClient--><path d="M385.12,316.1406 C425.78,316.1406 477.41,316.1406 517.88,316.1406 " fill="none" id="UpdateClient-to-ReadClient" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="523.27,316.1406,514.27,312.1406,518.27,316.1406,514.27,320.1406,523.27,316.1406" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="432" y="312.6357">«include»</text><!--MD5=[0bffdf3df52647cee8b16d196b1c865b]
+link User to DeleteClient--><path d="M103.58,482.5406 C128.73,468.5906 184.42,438.3006 233,416.1406 C246.82,409.8306 262.22,403.5206 275.96,398.1306 " fill="none" id="User-to-DeleteClient" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="280.95,396.1906,271.1119,395.7304,276.2911,398.0056,274.0159,403.1848,280.95,396.1906" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8842dac457d5c14def0d2292c5ecf394]
+link DeleteClient to ReadClient--><path d="M364.63,372.2606 C398.83,364.1906 446.38,352.7906 488,342.1406 C504.37,337.9506 522.26,333.1606 538.11,328.8506 " fill="none" id="DeleteClient-to-ReadClient" style="stroke:#A80036;stroke-width:1.0;stroke-dasharray:7.0,7.0;"/><polygon fill="#A80036" points="542.96,327.5306,533.2254,326.0348,538.1355,328.8438,535.3265,333.7539,542.96,327.5306" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="55" x="432" y="338.6357">«include»</text><!--MD5=[33f2aea30f0d171682bb1b02943c3d26]
+link User to CreateHeadquarter--><path d="M103.8,487.8806 C131.08,483.4106 193.64,473.1706 243.81,464.9606 " fill="none" id="User-to-CreateHeadquarter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="248.93,464.1206,239.4054,461.6143,243.9946,464.9217,240.6872,469.5109,248.93,464.1206" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a54806605d02dc8b695753960abdd830]
+link User to ReadHeadquarter--><path d="M103.8,492.3406 C131.45,496.7406 195.35,506.9206 245.85,514.9706 " fill="none" id="User-to-ReadHeadquarter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="251,515.7906,242.7396,510.4273,246.062,515.0057,241.4836,518.3281,251,515.7906" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b9ec8268ba33dc83598a135efcbba8c6]
+link User to UpdateHeadquarter--><path d="M103.7,497.3106 C129.04,510.5106 185.03,539.3906 233,562.1406 C245.82,568.2206 259.88,574.6006 272.73,580.3106 " fill="none" id="User-to-UpdateHeadquarter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="277.4,582.3806,270.796,575.074,272.8298,580.3526,267.5511,582.3863,277.4,582.3806" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a30760316af21f98c30f6ff6deffed31]
+link User to DeleteHeadquarter--><path d="M103.72,507.8606 C127.4,537.4706 178.65,597.4906 233,635.1406 C243.42,642.3606 255.47,648.6906 267.11,653.9806 " fill="none" id="User-to-DeleteHeadquarter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="271.71,656.0306,265.106,648.724,267.1398,654.0026,261.8611,656.0363,271.71,656.0306" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[ac93ef03d40fbbe5d390fd99ec55eb21]
+link User to CreateMap--><path d="M103.53,522.2806 C124.73,569.1106 169.96,656.1706 233,708.1406 C243.7,716.9606 257,723.7606 269.8,728.8806 " fill="none" id="User-to-CreateMap" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="274.48,730.6906,267.5201,723.7222,269.8144,728.8929,264.6437,731.1872,274.48,730.6906" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d84e6a7a9fd72ed417ad30041d9c4715]
+link User to ReadMap--><path d="M100.61,531.7606 C118.24,592.9906 159.15,707.4206 233,775.1406 C243.28,784.5706 256.58,791.4406 269.52,796.4006 " fill="none" id="User-to-ReadMap" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="274.26,798.1406,267.1939,791.2799,269.5673,796.4147,264.4325,798.7882,274.26,798.1406" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d4161b734182b61ab89160b113a5da06]
+link User to UpdateMap--><path d="M96.11,531.6906 C108.83,603.9906 144.69,753.5706 233,841.1406 C242.14,850.2006 254.07,856.8506 266.03,861.7106 " fill="none" id="User-to-UpdateMap" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270.79,863.5506,263.8486,856.5637,266.1292,861.7405,260.9524,864.021,270.79,863.5506" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4d54404d05c167f2b0aa623da6f83179]
+link User to DeleteMap--><path d="M92.98,531.8006 C101.04,614.1806 130.17,799.2406 233,907.1406 C241.97,916.5506 253.97,923.3406 266.06,928.2106 " fill="none" id="User-to-DeleteMap" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="270.87,930.0506,263.8915,923.1007,266.1996,928.2653,261.035,930.5734,270.87,930.0506" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[127d053b71b25f403f4011a193689f43]
+link AddSensorToMap to AddSensorToStock--><!--MD5=[fb36c23df09a1504d45ffd0029c65995]
+link AddSensorToStock to ShowState--><!--MD5=[41b7d114c36f556fe5aacad2be32c88a]
+link AddSensorToMap to PrintState--><!--MD5=[08f262e73c89dfbae2f0de6c58e6b85c]
+link PrintState to SendState--><!--MD5=[1bc2df6b05605795fdd53c67b1b38254]
+@startuml
+title UseCases
+left to right direction
+actor User
+
+usecase CreateSensor
+usecase ReadSensor
+usecase UpdateSensor
+usecase DeleteSensor
+usecase AddSensorToMap
+usecase AddSensorToStock
+
+usecase ShowState
+usecase PrintState
+usecase SendState
+
+usecase CreateClient
+usecase ReadClient
+usecase UpdateClient
+usecase DeleteClient
+
+usecase CreateHeadquarter
+usecase ReadHeadquarter
+usecase UpdateHeadquarter
+usecase DeleteHeadquarter
+
+usecase CreateMap
+usecase ReadMap
+usecase UpdateMap
+usecase DeleteMap
+
+
+User - -> CreateSensor
+CreateSensor ..> ReadSensor  : "<<include>>"
+'User - -> ReadSensor
+User - -> UpdateSensor
+UpdateSensor ..> ReadSensor  : "<<include>>"
+User - -> DeleteSensor
+DeleteSensor ..> ReadSensor  : "<<include>>"
+
+
+User - -> CreateClient
+CreateClient ..> ReadClient : "<<include>>"
+'User - -> ReadClient
+User - -> UpdateClient
+UpdateClient ..> ReadClient : "<<include>>"
+User - -> DeleteClient
+DeleteClient ..> ReadClient : "<<include>>"
+
+User - -> CreateHeadquarter
+User - -> ReadHeadquarter
+User - -> UpdateHeadquarter
+User - -> DeleteHeadquarter
+
+User - -> CreateMap
+User - -> ReadMap
+User - -> UpdateMap
+User - -> DeleteMap
+
+@enduml
+
+@startuml
+title UseCases
+left to right direction
+actor User
+
+usecase CreateSensor
+usecase ReadSensor
+usecase UpdateSensor
+usecase DeleteSensor
+usecase AddSensorToMap
+usecase AddSensorToStock
+
+usecase ShowState
+usecase PrintState
+usecase SendState
+
+usecase CreateClient
+usecase ReadClient
+usecase UpdateClient
+usecase DeleteClient
+
+usecase CreateHeadquarter
+usecase ReadHeadquarter
+usecase UpdateHeadquarter
+usecase DeleteHeadquarter
+
+usecase CreateMap
+usecase ReadMap
+usecase UpdateMap
+usecase DeleteMap
+
+
+User - -> CreateSensor
+CreateSensor ..> ReadSensor  : "<<include>>"
+User - -> UpdateSensor
+UpdateSensor ..> ReadSensor  : "<<include>>"
+User - -> DeleteSensor
+DeleteSensor ..> ReadSensor  : "<<include>>"
+
+
+User - -> CreateClient
+CreateClient ..> ReadClient : "<<include>>"
+User - -> UpdateClient
+UpdateClient ..> ReadClient : "<<include>>"
+User - -> DeleteClient
+DeleteClient ..> ReadClient : "<<include>>"
+
+User - -> CreateHeadquarter
+User - -> ReadHeadquarter
+User - -> UpdateHeadquarter
+User - -> DeleteHeadquarter
+
+User - -> CreateMap
+User - -> ReadMap
+User - -> UpdateMap
+User - -> DeleteMap
+
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 18:25:22 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: es
+Country: ES
+--></g></svg>
