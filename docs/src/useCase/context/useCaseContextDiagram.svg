@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="517.5px" preserveAspectRatio="none" style="width:548px;height:517px;background:#FFFFFF;" version="1.1" viewBox="0 0 548 517" width="548px" zoomAndPan="magnify"><defs><filter height="300%" id="f8f4z2gsoimwq" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="1.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="2.0" dy="2.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><text fill="#000000" font-family="sans-serif" font-size="9" lengthAdjust="spacing" textLength="83" x="228.75" y="9.3428">UserContextDiagram</text><g id="INITIAL"><rect fill="#FEFECE" filter="url(#f8f4z2gsoimwq)" height="25" rx="6.25" ry="6.25" style="stroke:#A80036;stroke-width:0.75;" width="32" x="325.75" y="54.8203"/><line style="stroke:#A80036;stroke-width:0.75;" x1="325.75" x2="357.75" y1="68.625" y2="68.625"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="22" x="330.75" y="64.5869">INITIAL</text></g><g id="OPENED_APPLICATION"><rect fill="#FEFECE" filter="url(#f8f4z2gsoimwq)" height="25" rx="6.25" ry="6.25" style="stroke:#A80036;stroke-width:0.75;" width="87" x="298.25" y="129.8203"/><line style="stroke:#A80036;stroke-width:0.75;" x1="298.25" x2="385.25" y1="143.625" y2="143.625"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="77" x="303.25" y="139.5869">OPENED_APPLICATION</text></g><g id="CLIENT_CREATED"><rect fill="#FEFECE" filter="url(#f8f4z2gsoimwq)" height="25" rx="6.25" ry="6.25" style="stroke:#A80036;stroke-width:0.75;" width="71" x="229.25" y="218.5703"/><line style="stroke:#A80036;stroke-width:0.75;" x1="229.25" x2="300.25" y1="232.375" y2="232.375"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="61" x="234.25" y="228.3369">CLIENT_CREATED</text></g><g id="HEADQUARTER_CREATED"><rect fill="#FEFECE" filter="url(#f8f4z2gsoimwq)" height="25" rx="6.25" ry="6.25" style="stroke:#A80036;stroke-width:0.75;" width="99" x="74.25" y="329.5703"/><line style="stroke:#A80036;stroke-width:0.75;" x1="74.25" x2="173.25" y1="343.375" y2="343.375"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="89" x="79.25" y="339.3369">HEADQUARTER_CREATED</text></g><g id="MAP_CREATED"><rect fill="#FEFECE" filter="url(#f8f4z2gsoimwq)" height="25" rx="6.25" ry="6.25" style="stroke:#A80036;stroke-width:0.75;" width="61.5" x="3.5" y="421.0703"/><line style="stroke:#A80036;stroke-width:0.75;" x1="3.5" x2="65" y1="434.875" y2="434.875"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="51.5" x="8.5" y="430.8369">MAP_CREATED</text></g><g id="SENSOR_CREATED"><rect fill="#FEFECE" filter="url(#f8f4z2gsoimwq)" height="25" rx="6.25" ry="6.25" style="stroke:#A80036;stroke-width:0.75;" width="75.5" x="381.5" y="218.5703"/><line style="stroke:#A80036;stroke-width:0.75;" x1="381.5" x2="457" y1="232.375" y2="232.375"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="65.5" x="386.5" y="228.3369">SENSOR_CREATED</text></g><g id="STATS_GENERATED"><rect fill="#FEFECE" filter="url(#f8f4z2gsoimwq)" height="25" rx="6.25" ry="6.25" style="stroke:#A80036;stroke-width:0.75;" width="79" x="379.75" y="375.3203"/><line style="stroke:#A80036;stroke-width:0.75;" x1="379.75" x2="458.75" y1="389.125" y2="389.125"/><text fill="#000000" font-family="sans-serif" font-size="7" lengthAdjust="spacing" textLength="69" x="384.75" y="385.0869">STATS_GENERATED</text></g><ellipse cx="341.75" cy="19.3203" fill="#000000" filter="url(#f8f4z2gsoimwq)" rx="5" ry="5" style="stroke:none;stroke-width:0.5;"/><ellipse cx="220.75" cy="506.8203" filter="url(#f8f4z2gsoimwq)" rx="5" ry="5" style="stroke:#000000;stroke-width:0.5;fill:none;"/><ellipse cx="221" cy="507.0703" fill="#000000" rx="3" ry="3" style="stroke:none;stroke-width:0.5;"/><!--MD5=[06c3f2024f4ea60966e79307ee69ec5f]
+link *start to INITIAL--><path d="M341.75,24.3253 C341.75,30.6703 341.75,42.5253 341.75,52.1053 " fill="none" id="*start-to-INITIAL" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="341.75,54.7403,343.75,50.2403,341.75,52.2403,339.75,50.2403,341.75,54.7403" style="stroke:#A80036;stroke-width:0.5;"/><!--MD5=[b018d4858215390e1e25566560874e02]
+link INITIAL to OPENED_APPLICATION--><path d="M341.75,79.8753 C341.75,92.8303 341.75,113.4203 341.75,127.2653 " fill="none" id="INITIAL-to-OPENED_APPLICATION" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="341.75,129.7703,343.75,125.2703,341.75,127.2703,339.75,125.2703,341.75,129.7703" style="stroke:#A80036;stroke-width:0.5;"/><path d="M344.25,97.3203 L344.25,110.3203 L428.75,110.3203 L428.75,102.3203 L423.75,97.3203 L344.25,97.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M423.75,97.3203 L423.75,102.3203 L428.75,102.3203 L423.75,97.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="74" x="347.25" y="106.5679">Login (not on this version)</text><!--MD5=[222cc1d2ce53e52b409d38f9d771080c]
+link OPENED_APPLICATION to CLIENT_CREATED--><path d="M331.205,154.8353 C317.075,170.9403 292.045,199.4653 277.065,216.5353 " fill="none" id="OPENED_APPLICATION-to-CLIENT_CREATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="275.29,218.5553,279.7584,216.4857,276.9363,216.6739,276.7481,213.8517,275.29,218.5553" style="stroke:#A80036;stroke-width:0.5;"/><path d="M319.75,172.3203 L319.75,185.3203 L365.75,185.3203 L365.75,177.3203 L360.75,172.3203 L319.75,172.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M360.75,172.3203 L360.75,177.3203 L365.75,177.3203 L360.75,172.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="35.5" x="322.75" y="181.5679">CreateClient</text><!--MD5=[35cf1fd59acc6b5033ddd75e8ba08f96]
+link CLIENT_CREATED to CLIENT_CREATED--><path d="M300.295,221.5603 C310.18,222.0003 317.75,225.1703 317.75,231.0703 C317.75,236.4203 311.53,239.5253 303.01,240.3853 " fill="none" id="CLIENT_CREATED-to-CLIENT_CREATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="300.295,240.5803,304.9264,242.2537,302.7886,240.4017,304.6406,238.2639,300.295,240.5803" style="stroke:#A80036;stroke-width:0.5;"/><path d="M320.25,215.3203 L320.25,244.8203 L367.75,244.8203 L367.75,220.3203 L362.75,215.3203 L320.25,215.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M362.75,215.3203 L362.75,220.3203 L367.75,220.3203 L362.75,215.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="31.5" x="323.25" y="224.5679">ReadClient</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="37" x="323.25" y="232.7437">UpdateClient</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="35" x="323.25" y="240.9194">DeleteClient</text><!--MD5=[75f170cd9ce577813310bf9a00cea9f9]
+link CLIENT_CREATED to HEADQUARTER_CREATED--><path d="M242.09,243.6453 C228.61,251.2203 211.425,261.5603 197.25,272.3203 C174.53,289.5703 151.005,312.8653 136.87,327.5503 " fill="none" id="CLIENT_CREATED-to-HEADQUARTER_CREATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="135.025,329.4753,139.5883,327.6243,136.7603,327.6757,136.7089,324.8477,135.025,329.4753" style="stroke:#A80036;stroke-width:0.5;"/><path d="M199.75,283.0703 L199.75,296.0703 L264.25,296.0703 L264.25,288.0703 L259.25,283.0703 L199.75,283.0703 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M259.25,283.0703 L259.25,288.0703 L264.25,288.0703 L259.25,283.0703 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="54" x="202.75" y="292.3179">CreateHeadquarter</text><!--MD5=[ac0a97c6d46e142a7af651248aed14c3]
+link HEADQUARTER_CREATED to HEADQUARTER_CREATED--><path d="M173.275,333.9403 C183.45,334.8103 190.75,337.5203 190.75,342.0703 C190.75,346.2253 184.65,348.8503 175.83,349.9353 " fill="none" id="HEADQUARTER_CREATED-to-HEADQUARTER_CREATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="173.275,350.2003,177.9569,351.7266,175.7617,349.9431,177.5453,347.7479,173.275,350.2003" style="stroke:#A80036;stroke-width:0.5;"/><path d="M193.25,326.3203 L193.25,355.8203 L259.25,355.8203 L259.25,331.3203 L254.25,326.3203 L193.25,326.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M254.25,326.3203 L254.25,331.3203 L259.25,331.3203 L254.25,326.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="50" x="196.25" y="335.5679">ReadHeadquarter</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="55.5" x="196.25" y="343.7437">UpdateHeadquarter</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="53.5" x="196.25" y="351.9194">DeleteHeadquarter</text><!--MD5=[5f0bce078ba03990d6d4e1092cb8839a]
+link HEADQUARTER_CREATED to MAP_CREATED--><path d="M111.865,354.5903 C95.35,371.2903 65.52,401.4503 48.045,419.1203 " fill="none" id="HEADQUARTER_CREATED-to-MAP_CREATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="46.185,421.0053,50.7704,419.2097,47.942,419.2269,47.9249,416.3985,46.185,421.0053" style="stroke:#A80036;stroke-width:0.5;"/><path d="M92.25,380.3203 L92.25,393.3203 L134.25,393.3203 L134.25,385.3203 L129.25,380.3203 L92.25,380.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M129.25,380.3203 L129.25,385.3203 L134.25,385.3203 L129.25,380.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="31.5" x="95.25" y="389.5679">CreateMap</text><!--MD5=[993225077c6b5fd60a0242ba1286f913]
+link MAP_CREATED to MAP_CREATED--><path d="M65.11,425.5103 C74.83,425.6353 82.5,428.3203 82.5,433.5703 C82.5,438.3253 76.2,440.9803 67.785,441.5253 " fill="none" id="MAP_CREATED-to-MAP_CREATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="65.11,441.6303,69.6813,443.4614,67.6083,441.5373,69.5324,439.4642,65.11,441.6303" style="stroke:#A80036;stroke-width:0.5;"/><path d="M85,417.8203 L85,447.3203 L128.5,447.3203 L128.5,422.8203 L123.5,417.8203 L85,417.8203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M123.5,417.8203 L123.5,422.8203 L128.5,422.8203 L123.5,417.8203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="27.5" x="88" y="427.0679">ReadMap</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="33" x="88" y="435.2437">UpdateMap</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="31" x="88" y="443.4194">DeleteMap</text><!--MD5=[766a1363d58e32be58d8c32e0be58eab]
+link OPENED_APPLICATION to SENSOR_CREATED--><path d="M357.795,154.8753 C363.27,159.3103 369.26,164.5453 374.25,169.8203 C388.145,184.5153 401.62,203.5253 410.14,216.3403 " fill="none" id="OPENED_APPLICATION-to-SENSOR_CREATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="411.57,218.4953,410.7572,213.6384,410.1915,216.4097,407.4202,215.844,411.57,218.4953" style="stroke:#A80036;stroke-width:0.5;"/><path d="M393.25,172.3203 L393.25,185.3203 L443.25,185.3203 L443.25,177.3203 L438.25,172.3203 L393.25,172.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M438.25,172.3203 L438.25,177.3203 L443.25,177.3203 L438.25,172.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="39.5" x="396.25" y="181.5679">CreateSensor</text><!--MD5=[a190cf97c4f7354415dda548de13690d]
+link SENSOR_CREATED to SENSOR_CREATED--><path d="M457.08,221.6003 C467,222.1603 474.5,225.3203 474.5,231.0703 C474.5,236.3303 468.235,239.4203 459.58,240.3403 " fill="none" id="SENSOR_CREATED-to-SENSOR_CREATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="457.08,240.5403,461.7305,242.1597,459.5714,240.3327,461.3984,238.1735,457.08,240.5403" style="stroke:#A80036;stroke-width:0.5;"/><path d="M477,207.3203 L477,252.8203 L543.5,252.8203 L543.5,212.3203 L538.5,207.3203 L477,207.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M538.5,207.3203 L538.5,212.3203 L543.5,212.3203 L538.5,207.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="35.5" x="480" y="216.5679">ReadSensor</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="41" x="480" y="224.7437">UpdateSensor</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="39" x="480" y="232.9194">DeleteSensor</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="51.5" x="480" y="241.0952">AddSensorToMap</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="56" x="480" y="249.271">AddSensorToStock</text><!--MD5=[10c964db47a16ba284bd8360bda4e4a8]
+link CLIENT_CREATED to *end--><path d="M267,243.6453 C268.39,251.7253 270.04,262.6203 270.75,272.3203 C272.205,292.2103 277.985,433.2353 270.75,451.8203 C261.8,474.8153 238.11,494.0003 226.855,502.1353 " fill="none" id="CLIENT_CREATED-to-*end" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="224.775,503.6153,229.6006,502.6336,226.8113,502.1649,227.28,499.3756,224.775,503.6153" style="stroke:#A80036;stroke-width:0.5;"/><path d="M277.25,380.3203 L277.25,393.3203 L365.75,393.3203 L365.75,385.3203 L360.75,380.3203 L277.25,380.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M360.75,380.3203 L360.75,385.3203 L365.75,385.3203 L360.75,380.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="78" x="280.25" y="389.5679">Logout (not on this version)</text><!--MD5=[6422ae0d995ab2236496d8f2a215ac8d]
+link HEADQUARTER_CREATED to *end--><path d="M131.31,354.6253 C134.985,360.7153 139.33,368.2853 142.75,375.3203 C158.755,408.2403 154.175,420.5803 173.25,451.8203 C185.595,472.0353 205.555,492.0653 215.19,501.1953 " fill="none" id="HEADQUARTER_CREATED-to-*end" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="217.19,503.0753,215.2838,498.5348,215.3695,501.3619,212.5424,501.4476,217.19,503.0753" style="stroke:#A80036;stroke-width:0.5;"/><path d="M175.75,426.0703 L175.75,439.0703 L264.25,439.0703 L264.25,431.0703 L259.25,426.0703 L175.75,426.0703 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M259.25,426.0703 L259.25,431.0703 L264.25,431.0703 L259.25,426.0703 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="78" x="178.75" y="435.3179">Logout (not on this version)</text><!--MD5=[400d723ceed96febb9ed112b19b71649]
+link MAP_CREATED to *end--><path d="M34.57,446.1853 C35.59,458.4403 39.195,476.9353 51.25,486.8203 C76.435,507.4703 183.425,507.0303 213.095,506.5003 " fill="none" id="MAP_CREATED-to-*end" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="215.72,506.4453,211.1809,504.5357,213.2205,506.4953,211.2609,508.5349,215.72,506.4453" style="stroke:#A80036;stroke-width:0.5;"/><path d="M53.75,469.3203 L53.75,482.3203 L142.25,482.3203 L142.25,474.3203 L137.25,469.3203 L53.75,469.3203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M137.25,469.3203 L137.25,474.3203 L142.25,474.3203 L137.25,469.3203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="78" x="56.75" y="478.5679">Logout (not on this version)</text><!--MD5=[84e0b3b84ec07514403377676cd4d02e]
+link SENSOR_CREATED to STATS_GENERATED--><path d="M419.25,243.6603 C419.25,271.8303 419.25,341.7503 419.25,372.4603 " fill="none" id="SENSOR_CREATED-to-STATS_GENERATED" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="419.25,375.1303,421.25,370.6303,419.25,372.6303,417.25,370.6303,419.25,375.1303" style="stroke:#A80036;stroke-width:0.5;"/><path d="M421.75,274.8203 L421.75,304.3203 L463.75,304.3203 L463.75,279.8203 L458.75,274.8203 L421.75,274.8203 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M458.75,274.8203 L458.75,279.8203 L463.75,279.8203 L458.75,274.8203 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="31.5" x="424.75" y="284.0679">ShowState</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="29" x="424.75" y="292.2437">PrintState</text><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="30.5" x="424.75" y="300.4194">SendState</text><!--MD5=[47909c42bd19c15bba265428d18a2733]
+link STATS_GENERATED to *end--><path d="M407.54,400.4103 C386.76,421.1653 341.22,463.5953 294.75,486.8203 C272.02,498.1803 241.95,503.4503 228.195,505.3903 " fill="none" id="STATS_GENERATED-to-*end" style="stroke:#A80036;stroke-width:0.5;"/><polygon fill="#A80036" points="225.67,505.7353,230.4016,507.0998,228.1464,505.3928,229.8535,503.1376,225.67,505.7353" style="stroke:#A80036;stroke-width:0.5;"/><path d="M394.75,426.0703 L394.75,439.0703 L483.25,439.0703 L483.25,431.0703 L478.25,426.0703 L394.75,426.0703 " fill="#FBFB77" filter="url(#f8f4z2gsoimwq)" style="stroke:#A80036;stroke-width:0.5;"/><path d="M478.25,426.0703 L478.25,431.0703 L483.25,431.0703 L478.25,426.0703 " fill="#FBFB77" style="stroke:#A80036;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="6.5" lengthAdjust="spacing" textLength="78" x="397.75" y="435.3179">Logout (not on this version)</text><!--MD5=[aac2bb55d213d9c4332406020d763bbd]
+@startuml
+title UserContextDiagram
+state INITIAL
+state OPENED_APPLICATION
+state CLIENT_CREATED
+state HEADQUARTER_CREATED
+state MAP_CREATED
+state SENSOR_CREATED
+state STATS_GENERATED
+
+[*] - -> INITIAL
+
+INITIAL - -> OPENED_APPLICATION
+note on link
+    Login (not on this version)
+end note
+
+OPENED_APPLICATION - -> CLIENT_CREATED
+    note on link
+        CreateClient
+    end note
+CLIENT_CREATED - -> CLIENT_CREATED
+note on link
+    ReadClient
+    UpdateClient
+    DeleteClient
+end note
+
+CLIENT_CREATED - -> HEADQUARTER_CREATED
+    note on link
+        CreateHeadquarter
+    end note
+
+HEADQUARTER_CREATED - -> HEADQUARTER_CREATED
+    note on link
+        ReadHeadquarter
+        UpdateHeadquarter
+        DeleteHeadquarter
+    end note
+
+HEADQUARTER_CREATED - -> MAP_CREATED
+    note on link
+        CreateMap
+    end note
+
+MAP_CREATED - -> MAP_CREATED
+    note on link
+        ReadMap
+        UpdateMap
+        DeleteMap
+    end note
+
+OPENED_APPLICATION - -> SENSOR_CREATED
+    note on link
+        CreateSensor
+    end note
+
+SENSOR_CREATED - -> SENSOR_CREATED
+    note on link
+        ReadSensor
+        UpdateSensor
+        DeleteSensor
+        AddSensorToMap
+        AddSensorToStock
+    end note
+
+CLIENT_CREATED - -> [*]
+      note on link
+          Logout (not on this version)
+      end note
+
+HEADQUARTER_CREATED - -> [*]
+      note on link
+          Logout (not on this version)
+      end note
+
+MAP_CREATED - -> [*]
+      note on link
+          Logout (not on this version)
+      end note
+
+SENSOR_CREATED - -> STATS_GENERATED
+       note on link
+           ShowState
+           PrintState
+           SendState
+       end note
+
+STATS_GENERATED - -> [*]
+      note on link
+          Logout (not on this version)
+      end note
+
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 18:25:22 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: es
+Country: ES
+--></g></svg>
