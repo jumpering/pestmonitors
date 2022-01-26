@@ -14,4 +14,4 @@ Diagrama dels casos d'ús que ha de satisfer la primera versió del projecte.
 
 ### Use case context
 Diagrama on es contextualitzen tots els casos d'ús que es proposen a la primera versió del projecte.
-![UseCaseContext](./docs/src/useCase/context/useCaseContextDiagram.svg)
+![UseCaseContext](./docs/src/useCase/context/useCaseContext.svg)

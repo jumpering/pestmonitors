@@ -1,5 +1,5 @@
 @startuml
-title UserContextDiagram
+title UseCaseContext
 state INITIAL
 state OPENED_APPLICATION
 state CLIENT_CREATED
