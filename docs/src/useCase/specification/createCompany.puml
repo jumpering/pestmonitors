@@ -1,0 +1,42 @@
+@startuml
+title CreateCompany specification
+skinparam NoteBackgroundColor white
+hide empty description
+
+state creatingCompany as " "
+state creatingCompany2 as " "
+state CompanyCreated as ":UpdateCompany"
+state invalidCompanyName <<choice>>
+
+
+OPENED_APPLICATION -[#green]-> creatingCompany
+note on link #white
+  <b>Player requests to
+  * Create a new company
+end note
+
+creatingCompany -[#green]-> creatingCompany2
+note on link
+  <b>System requires
+  * Company name [not null, unique]
+end note
+
+creatingCompany2 -[#green]-> invalidCompanyName
+note on link
+  <b>Player provides
+  * Company name
+end note
+
+invalidCompanyName -up-> OPENED_APPLICATION
+note on link
+  [null value, invalid name, or name already exist]
+end note
+
+invalidCompanyName -[#green]-> CompanyCreated
+note on link
+  <b>System shows
+  * Company in UpdateCompany state
+end note
+
+CompanyCreated -[#green]-> UPDATE_COMPANY
+@enduml

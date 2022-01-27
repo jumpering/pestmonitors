@@ -14,10 +14,10 @@ usecase ShowState
 usecase PrintState
 usecase SendState
 
-usecase CreateClient
-usecase ReadClient
-usecase UpdateClient
-usecase DeleteClient
+usecase CreateCompany
+usecase ReadCompany
+usecase UpdateCompany
+usecase DeleteCompany
 
 usecase CreateHeadquarter
 usecase ReadHeadquarter
@@ -32,20 +32,18 @@ usecase DeleteMap
 
 User --> CreateSensor
 CreateSensor ..> ReadSensor  : "<<include>>"
-'User --> ReadSensor
 User --> UpdateSensor
 UpdateSensor ..> ReadSensor  : "<<include>>"
 User --> DeleteSensor
 DeleteSensor ..> ReadSensor  : "<<include>>"
 
 
-User --> CreateClient
-CreateClient ..> ReadClient : "<<include>>"
-'User --> ReadClient
-User --> UpdateClient
-UpdateClient ..> ReadClient : "<<include>>"
-User --> DeleteClient
-DeleteClient ..> ReadClient : "<<include>>"
+User --> CreateCompany
+CreateCompany ..> ReadCompany : "<<include>>"
+User --> UpdateCompany
+UpdateCompany ..> ReadCompany : "<<include>>"
+User --> DeleteCompany
+DeleteCompany ..> ReadCompany : "<<include>>"
 
 User --> CreateHeadquarter
 User --> ReadHeadquarter
@@ -56,5 +54,4 @@ User --> CreateMap
 User --> ReadMap
 User --> UpdateMap
 User --> DeleteMap
-
 @enduml

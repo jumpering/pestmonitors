@@ -1,8 +1,9 @@
 @startuml
 title UseCaseContext
+
 state INITIAL
 state OPENED_APPLICATION
-state CLIENT_CREATED
+state COMPANY_CREATED
 state HEADQUARTER_CREATED
 state MAP_CREATED
 state SENSOR_CREATED
@@ -15,18 +16,18 @@ note on link
     Login (not on this version)
 end note
 
-OPENED_APPLICATION --> CLIENT_CREATED
+OPENED_APPLICATION --> COMPANY_CREATED
     note on link
-        CreateClient
+        CreateCompany
     end note
-CLIENT_CREATED --> CLIENT_CREATED
+COMPANY_CREATED --> COMPANY_CREATED
 note on link
-    ReadClient
-    UpdateClient
-    DeleteClient
+    ReadCompany
+    UpdateCompany
+    DeleteCompany
 end note
 
-CLIENT_CREATED --> HEADQUARTER_CREATED
+COMPANY_CREATED --> HEADQUARTER_CREATED
     note on link
         CreateHeadquarter
     end note
@@ -64,7 +65,7 @@ SENSOR_CREATED --> SENSOR_CREATED
         AddSensorToStock
     end note
 
-CLIENT_CREATED --> [*]
+COMPANY_CREATED --> [*]
       note on link
           Logout (not on this version)
       end note
@@ -90,5 +91,4 @@ STATS_GENERATED --> [*]
       note on link
           Logout (not on this version)
       end note
-
 @enduml
