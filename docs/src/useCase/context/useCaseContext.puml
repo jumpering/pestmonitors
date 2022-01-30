@@ -51,6 +51,8 @@ MAP_CREATED --> MAP_CREATED
         DeleteMap
     end note
 
+MAP_CREATED --> STATS_GENERATED
+
 OPENED_APPLICATION --> SENSOR_CREATED
     note on link
         CreateSensor
@@ -86,6 +88,13 @@ SENSOR_CREATED --> STATS_GENERATED
            PrintState
            SendState
        end note
+
+STATS_GENERATED --> STATS_GENERATED
+    note on link
+        SendState
+        ShowState
+        PrintState
+    end note
 
 STATS_GENERATED --> [*]
       note on link
