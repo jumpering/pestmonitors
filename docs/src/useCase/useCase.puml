@@ -1,5 +1,6 @@
 @startuml
-title UseCases
+allowmixing
+namespace useCases{
 left to right direction
 actor User
 
@@ -29,7 +30,6 @@ usecase ReadMap
 usecase UpdateMap
 usecase DeleteMap
 
-
 User --> CreateSensor
 CreateSensor ..> ReadSensor  : "<<include>>"
 User --> UpdateSensor
@@ -37,6 +37,8 @@ UpdateSensor ..> ReadSensor  : "<<include>>"
 User --> DeleteSensor
 DeleteSensor ..> ReadSensor  : "<<include>>"
 
+User --> AddSensorToMap
+User --> AddSensorToStock
 
 User --> CreateCompany
 CreateCompany ..> ReadCompany : "<<include>>"
@@ -46,12 +48,21 @@ User --> DeleteCompany
 DeleteCompany ..> ReadCompany : "<<include>>"
 
 User --> CreateHeadquarter
-User --> ReadHeadquarter
+CreateHeadquarter ..> ReadHeadquarter : "<<include>>"
 User --> UpdateHeadquarter
+UpdateHeadquarter ..> ReadHeadquarter : "<<include>>"
 User --> DeleteHeadquarter
+DeleteHeadquarter ..> ReadHeadquarter : "<<include>>"
 
 User --> CreateMap
-User --> ReadMap
+CreateMap  ..> ReadMap : "<<include>>"
 User --> UpdateMap
+UpdateMap  ..> ReadMap : "<<include>>"
 User --> DeleteMap
+DeleteMap  ..> ReadMap : "<<include>>"
+
+User --> ShowState
+User --> PrintState
+User --> SendState
+}
 @enduml

@@ -1,0 +1,47 @@
+@startuml
+'title EditConfigCollaborationDiagram
+namespace CreateCompanyCollaboration{
+allow_mixing
+' left to right direction
+
+actor User
+
+object Game
+object EditConfigView
+object EditConfigMenu
+object GameView
+object EditConfigController
+object Configuration
+
+User --> EditConfigView
+note on link
+    editConfig()
+end note
+note on link
+    editConfig()
+    setConfigParam(param)
+    testConfig()
+end note
+EditConfigView ..> EditConfigMenu : interact(EditConfigController)
+
+EditConfigMenu --> EditConfigMenu
+note on link
+    getConfigParam()
+end note
+
+EditConfigMenu --> EditConfigController
+note on link
+    setConfig(config)
+end note
+
+
+EditConfigView .down.> GameView : new()
+
+Game ..> Configuration : new()
+
+EditConfigController --> Game
+note on link
+    setConfig(config)
+end note
+}
+@enduml

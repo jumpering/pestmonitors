@@ -1,5 +1,4 @@
 @startuml
-'title Domain model
 namespace DomainModel{
 class User
 class Company
@@ -10,15 +9,14 @@ class Image
 class Sensor
 class RegisterLog
 
-User "1" *--> "n" Sensor
-User "1" *--> "n" Company
-Company "1" *--> "n" Headquarter
-Headquarter "1" *--> "n" Map
+User  *--> "*" Sensor
+User *--> "*" Company
+Company *--> "*" Headquarter
+Headquarter *--> "*" Map
 Map -down-|> GoogleMaps
 Map -down-|> Image
 
-Sensor ..> Map
-
-Sensor ..> RegisterLog
+Sensor ..> "1" Map
+Sensor --> "*" RegisterLog
 }
 @enduml
