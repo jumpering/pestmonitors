@@ -1,8 +1,9 @@
 @startuml
-title CreateCompany specification
+'title CreateCompany specification
 skinparam NoteBackgroundColor white
 hide empty description
 
+state CreateCompanySpecification{
 state creatingCompany as " "
 state creatingCompany2 as " "
 state CompanyCreated as ":UpdateCompany"
@@ -39,4 +40,7 @@ note on link
 end note
 
 CompanyCreated -[#green]-> UPDATE_COMPANY
+}
+
+
 @enduml

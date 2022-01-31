@@ -6,42 +6,17 @@ allow_mixing
 
 actor User
 
-object Game
-object EditConfigView
-object EditConfigMenu
-object GameView
-object EditConfigController
-object Configuration
+object CreateCompanyView
+object CreateCompanyController
+object CreateCompanyModel
 
-User --> EditConfigView
+User --> CreateCompanyView
 note on link
-    editConfig()
+    setName(param)
 end note
-note on link
-    editConfig()
-    setConfigParam(param)
-    testConfig()
-end note
-EditConfigView ..> EditConfigMenu : interact(EditConfigController)
+CreateCompanyView ..> CreateCompanyController : interact(EditConfigController)
 
-EditConfigMenu --> EditConfigMenu
-note on link
-    getConfigParam()
-end note
+CreateCompanyCollaboration --> CreateCompanyModel
 
-EditConfigMenu --> EditConfigController
-note on link
-    setConfig(config)
-end note
-
-
-EditConfigView .down.> GameView : new()
-
-Game ..> Configuration : new()
-
-EditConfigController --> Game
-note on link
-    setConfig(config)
-end note
 }
 @enduml

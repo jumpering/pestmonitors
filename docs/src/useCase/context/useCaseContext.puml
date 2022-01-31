@@ -83,17 +83,20 @@ MAP_CREATED --> [*]
       end note
 
 SENSOR_CREATED --> STATS_GENERATED
-       note on link
-           ShowState
-           PrintState
-           SendState
-       end note
+'       note on link
+'           ShowState
+'           PrintState
+'           SendState'
+'       end note
 
 STATS_GENERATED --> STATS_GENERATED
     note on link
         SendState
         ShowState
         PrintState
+        ShowState
+        PrintState
+        SendState
     end note
 
 STATS_GENERATED --> [*]
