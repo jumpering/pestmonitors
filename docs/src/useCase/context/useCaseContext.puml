@@ -63,8 +63,6 @@ SENSOR_CREATED --> SENSOR_CREATED
         ReadSensor
         UpdateSensor
         DeleteSensor
-        AddSensorToMap
-        AddSensorToStock
     end note
 
 COMPANY_CREATED --> [*]
@@ -88,6 +86,13 @@ SENSOR_CREATED --> STATS_GENERATED
 '           PrintState
 '           SendState'
 '       end note
+
+
+SENSOR_CREATED --> MAP_CREATED
+    note on link
+        AddSensorToMap
+        AddSensorToStock
+    end note
 
 STATS_GENERATED --> STATS_GENERATED
     note on link
