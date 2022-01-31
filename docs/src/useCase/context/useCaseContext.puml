@@ -52,6 +52,9 @@ MAP_CREATED --> MAP_CREATED
     end note
 
 MAP_CREATED --> STATS_GENERATED
+    note on link
+        ShowState
+    end note
 
 OPENED_APPLICATION --> SENSOR_CREATED
     note on link
@@ -81,11 +84,9 @@ MAP_CREATED --> [*]
       end note
 
 SENSOR_CREATED --> STATS_GENERATED
-'       note on link
-'           ShowState
-'           PrintState
-'           SendState'
-'       end note
+    note on link
+        ShowState
+    end note
 
 
 SENSOR_CREATED --> MAP_CREATED
@@ -97,11 +98,7 @@ SENSOR_CREATED --> MAP_CREATED
 STATS_GENERATED --> STATS_GENERATED
     note on link
         SendState
-        ShowState
         PrintState
-        ShowState
-        PrintState
-        SendState
     end note
 
 STATS_GENERATED --> [*]
