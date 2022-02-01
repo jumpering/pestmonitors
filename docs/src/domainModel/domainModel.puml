@@ -9,14 +9,15 @@ class Image
 class Sensor
 class RegisterLog
 
-User  *--> "*" Sensor
-User *--> "*" Company
-Company *--> "*" Headquarter
-Headquarter *--> "*" Map
+User  o--> "*" Sensor
+User o--> "*" Company
+Company o--> "*" Headquarter
+Headquarter o--> "*" Map
 Map -down-|> GoogleMaps
 Map -down-|> Image
 
-Sensor ..> "1" Map
+Sensor --> "1" Map
 Sensor --> "*" RegisterLog
+Map --> "*" RegisterLog
 }
 @enduml
