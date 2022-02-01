@@ -1,6 +1,6 @@
 # Pestmonitors.com
 
-Pestmonitors.com es una aplicació web d'una sola pàgina (o SPA Single Page Application) per controlar dispositius de hardware desenvolupats per la indústria/sector del control de plagues. Es tracta d'uns sensors que avisen de la presència de rosegadors en un espai monitorat. La pàgina web ha d'administrar tota la gestió d'aquests sensors.</br>
+Pestmonitors.com es una aplicació web d'una sola pàgina (o SPA Single Page Application) per controlar dispositius desenvolupats per la indústria/sector del control de plagues. Es tracta d'uns sensors que avisen de la presència de rosegadors en un espai monitorat. La pàgina web ha d'administrar tota la gestió d'aquests sensors.</br>
 
 El present document agrupa els diferents diagrames del projecte software, on s'utilitzarà Rational Unified Process (RUP) per el proces de desenvolupament.
 
