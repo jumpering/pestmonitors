@@ -10,12 +10,16 @@ Diagrama del model del domini de la aplicació on es defineix paraules i concept
 
 ### Use Cases
 Diagrama dels casos d'ús que ha de satisfer la primera versió del projecte.</br>
-![UseCases](./docs/src/useCase/useCase.svg)
+![UseCases](docs/src/useCaseView/useCases/useCases.svg)
 
 ### Use case context
 Diagrama on es contextualitzen tots els casos d'ús que es proposen a la primera versió del projecte.</br>
-![UseCaseContext](./docs/src/useCase/context/useCaseContext.svg)
+![UseCaseContext](docs/src/useCaseView/context/useCaseContext.svg)
 
 ### Use case CreateCompany specification
 Diagrama d'especificació del cas d'us de la creació de una empresa. Definim l'intercanvi d'informació entre l'actor i el sistema, transitant en estats de la aplicació.</br>
-![CreateCompanyUseCaseSpecification](./docs/src/useCase/specification/createCompany.svg)
+![CreateCompanyUseCaseSpecification](docs/src/useCaseView/specification/createCompany.svg)
+
+###Interface prototype
+Prototips d'interfaces i relacions
+![Interfaces](docs/src/useCaseView/propotype/mainScreen.png)
