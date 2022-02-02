@@ -20,6 +20,6 @@ Diagrama on es contextualitzen tots els casos d'ús que es proposen a la primera
 Diagrama d'especificació del cas d'us de la creació de una empresa. Definim l'intercanvi d'informació entre l'actor i el sistema, transitant en estats de la aplicació.</br>
 ![CreateCompanyUseCaseSpecification](docs/src/useCaseView/specification/createCompany.svg)
 
-###Interface prototype
+### Interface prototype
 Prototips d'interfaces i relacions
 ![Interfaces](docs/src/useCaseView/propotype/mainScreen.png)
