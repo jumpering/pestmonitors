@@ -1,0 +1,29 @@
+@startuml Packages
+  package apps.shared.views {
+    boundary Menu
+  }
+
+ package models{
+      entity Company
+    }
+
+  package controllers{
+    control CreateCompanyController
+    control ReadCompanyController
+    control UpdateCompanyController
+    control DeleteCompanyController
+  }
+
+  package views{
+    boundary CompanyView
+    boundary CreateCompanyView
+    boundary ReadCompanyView
+    boundary UpdateCompanyView
+    boundary DeleteCompanyView
+    CompanyView o-->CreateCompanyView
+    CompanyView o-->ReadCompanyView
+    CompanyView o-->UpdateCompanyView
+    CompanyView o-->DeleteCompanyView
+  }
+
+@enduml

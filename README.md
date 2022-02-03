@@ -22,4 +22,5 @@ Diagrama d'especificació del cas d'us de la creació de una empresa. Definim l'
 
 ### Interface prototype
 Prototips d'interfaces i relacions
-![Interfaces](docs/src/useCaseView/propotype/mainScreen.png)
+![main](docs/src/useCaseView/propotype/main.svg)
+![createCompany](docs/src/useCaseView/propotype/createCompany.svg)

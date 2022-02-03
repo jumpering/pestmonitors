@@ -13,19 +13,19 @@ state invalidCompanyName <<choice>>
 OPENED_APPLICATION -[#green]-> creatingCompany
 note on link #white
   <b>Player requests to
-  * Create a new company
+  Create a new company
 end note
 
 creatingCompany -[#green]-> creatingCompany2
 note on link
   <b>System requires
-  * Company name [not null, unique]
+  Company name [not null, unique]
 end note
 
 creatingCompany2 -[#green]-> invalidCompanyName
 note on link
   <b>Player provides
-  * Company name
+  Company name
 end note
 
 invalidCompanyName -up-> OPENED_APPLICATION
@@ -35,8 +35,8 @@ end note
 
 invalidCompanyName -[#green]-> CompanyCreated
 note on link
-  <b>System shows
-  * Company in UpdateCompany
+  <b>System allows
+  -UpdateCompany
 end note
 
 CompanyCreated -[#green]-> UPDATE_COMPANY
