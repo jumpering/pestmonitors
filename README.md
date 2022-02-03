@@ -4,6 +4,8 @@ Pestmonitors.com es una aplicació web d'una sola pàgina (o SPA Single Page App
 
 El present document agrupa els diferents diagrames del projecte software, on s'utilitzarà Rational Unified Process (RUP) per el proces de desenvolupament.
 
+## DISCIPLINA DE REQUISITS
+
 ### Domain model
 Diagrama del model del domini de la aplicació on es defineix paraules i conceptes generals.</br>
 ![DomainModel](./docs/src/domainModel/domainModel.svg)
@@ -21,6 +23,13 @@ Diagrama d'especificació del cas d'us de la creació de una empresa. Definim l'
 ![CreateCompanyUseCaseSpecification](docs/src/useCaseView/specification/createCompany.svg)
 
 ### Interface prototype
-Prototips d'interfaces i relacions
+Prototips d'interfaces i relacions</br>
 ![main](docs/src/useCaseView/propotype/main.svg)
 ![createCompany](docs/src/useCaseView/propotype/createCompany.svg)
+
+
+##DISCIPLINA D'ANALISIS
+
+###Architecture
+Diagrama de paquets
+![Packages](./docs/src/logicView/analysis/architecture/packages.svg)
