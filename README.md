@@ -1,14 +1,18 @@
 # Pestmonitors.com
 
-Pestmonitors.com es una aplicació web d'una sola pàgina (o SPA Single Page Application) per controlar dispositius desenvolupats per la indústria/sector del control de plagues. Es tracta d'uns sensors que avisen de la presència de rosegadors en un espai monitorat. La pàgina web ha d'administrar tota la gestió d'aquests sensors.</br>
+Pestmonitors.com es una aplicació web d'una sola pàgina (o SPA Single Page Application) per gestionar dispositius hardware desenvolupats per la indústria/sector del control de plagues. Els dispositius son uns sensors que envien alarmes a la aplicaició quan detecten la presència de rosegadors en un espai monitorat. La pàgina web desenvolupada ha d'administrar tota la gestió d'aquests sensors.</br>
 
-El present document agrupa els diferents diagrames del projecte software, on s'utilitzarà Rational Unified Process (RUP) per el proces de desenvolupament.
+El present document agrupa les diferents parts del projecte software. S'utilitzarà Rational Unified Process (RUP) per el proces de desenvolupament. Es tracta d'un proces dirigit per casos d'úsos i centrat en l'arquitectura. Els casos d'ùsos recullen els requisists funcionals de l'aplicació, i l'arquitectura defineix la manera en que s'estructuraràn èls elements del software. Aquest proces s'organitza en 5 disciplines:
+ * Disciplina de requisists
+ * Disciplina d'anàlisis
+ * Disiplina de disseny
+ * Disciplina d'implementació
+ * Disciplina de proves
 
 ## DISCIPLINA DE REQUISITS
-A la disciplina de requisits es centra en cercar actors i els casos d'úsos, i també en prioritzar, detallar i estructurar aquests casos d'úsos. </br> 
+La disciplina de requisits es centra en cercar actors i els casos d'úsos, i també en prioritzar, detallar i estructurar aquests casos d'úsos. S'utilitzarà un model del domini per definir les paraules i conceptes generals, així com definir les relacions més rellevants.</br>
 
 ### Domain model
-Diagrama del model del domini de la aplicació on es defineix paraules i conceptes generals.</br>
 ![DomainModel](./docs/src/domainModel/domainModel.svg)
 
 ### Use Cases
@@ -30,8 +34,8 @@ Prototips d'interfaces i relacions</br>
 
 
 ##DISCIPLINA D'ANALISIS
-A aquesta disciplina s'analitza l'arquitectura, el casos d'úsos (mitjanzan diagrames de collaboració), les clases i els paquets.
+La disciplina d'anàlisis s'analitzà l'arquitectura, el casos d'úsos (mitjanzan diagrames de collaboració), les clases i els paquets.</br>
 
-ls###Architecture
+###Architecture
 Diagrama de paquets
 ![Packages](./docs/src/logicView/analysis/architecture/packages.svg)
