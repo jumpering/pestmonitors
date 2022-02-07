@@ -32,14 +32,14 @@ Prototips d'interfaces i relacions. Explempe de relació entre la vista principa
 ![mainToCreateCompany](docs/src/useCaseView/propotype/mainToCreateCompany.svg)
 
 
-##DISCIPLINA D'ANALISIS
+## DISCIPLINA D'ANALISIS
 La disciplina d'anàlisis s'analitzà l'arquitectura, el casos d'úsos (mitjanzan diagrames de collaboració), les clases i els paquets.</br>
 
-###Architecture
+### Architecture
 Diagrama de paquets
 ![PackagesMVC](./docs/src/logicView/analysis/architecture/packages.svg)
 
 
-###Use cases analysis
+### Use cases analysis
 Diagrames amb les colaboracions (missatges) entre les vistes, controladors i models. Això brinda trazabilitat a cada cas d'ús, deixan clar quin impacte pot tenir qualsevol canvi al futur.</br>
 ![collaboration](./docs/src/logicView/analysis/collaboration/createCompany.svg)
