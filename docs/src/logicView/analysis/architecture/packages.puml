@@ -1,7 +1,4 @@
 @startuml Packages
-  package apps.shared.views {
-    boundary Menu
-  }
 
  package models{
       entity Company
