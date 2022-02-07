@@ -5,7 +5,7 @@ Pestmonitors.com es una aplicació web d'una sola pàgina (o SPA Single Page App
 El present document agrupa les diferents parts del projecte software. S'utilitzarà Rational Unified Process (RUP) per el proces de desenvolupament. Es tracta d'un proces dirigit per casos d'úsos i centrat en l'arquitectura. Els casos d'ùsos recullen els requisists funcionals de l'aplicació, i l'arquitectura defineix la manera en que s'estructuraràn èls elements del software. Aquest proces s'organitza en 5 disciplines:
  * Disciplina de requisists
  * Disciplina d'anàlisis
- * Disiplina de disseny
+ * Disciplina de disseny
  * Disciplina d'implementació
  * Disciplina de proves
 
@@ -28,9 +28,8 @@ Diagrama d'especificació del cas d'us de la creació de una empresa. Definim l'
 ![CreateCompanyUseCaseSpecification](docs/src/useCaseView/specification/createCompany.svg)
 
 ### Interface prototype
-Prototips d'interfaces i relacions</br>
-![main](docs/src/useCaseView/propotype/main.svg)
-![createCompany](docs/src/useCaseView/propotype/createCompany.svg)
+Prototips d'interfaces i relacions. Explempe de relació entre la vista principal (main) i la de CreateCompany</br>
+![mainToCreateCompany](docs/src/useCaseView/propotype/mainToCreateCompany.svg)
 
 
 ##DISCIPLINA D'ANALISIS
