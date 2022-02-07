@@ -16,15 +16,15 @@ La disciplina de requisits se centra a cercar actors i els casos d'usos, i tamb�
 ![DomainModel](./docs/src/domainModel/domainModel.svg)
 
 ### Use Cases
-Diagrama dels casos d'ús que ha de satisfer la primera versió del projecte.</br>
+Diagrama de tots els casos d'usos. Un cas d'ús és una secuencia d'accions, incloent-hi variacions, que el sistema pot realitzar i que donen un resultat observable i d'interès a un actor concret.</br>
 ![UseCases](docs/src/useCaseView/useCases/useCases.svg)
 
 ### Use case context
-Diagrama on es contextualitzen tots els casos d'ús que es proposen a la primera versió del projecte.</br>
+Diagrama on es contextualitzen tots els casos d'usos entre els diferents estats de l'aplicació.</br>
 ![UseCaseContext](docs/src/useCaseView/context/useCaseContext.svg)
 
 ### Use case CreateCompany specification
-Diagrama d'especificació del cas d'us de la creació de una empresa. Definim l'intercanvi d'informació entre l'actor i el sistema, transitant en estats de l'aplicació.</br>
+Diagrama d'especificació del cas d'us de la creació d'una empresa. Definim l'intercanvi d'informació entre l'actor i el sistema per aquest cas d'ús concret, i els camins en que pot derivar aquest intercanvi.</br>
 ![CreateCompanyUseCaseSpecification](docs/src/useCaseView/specification/createCompany.svg)
 
 ### Interface prototype
