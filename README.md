@@ -40,6 +40,6 @@ Diagrama dels paquets model/vista/controladors.
 ![PackagesMVC](./docs/src/logicView/analysis/architecture/packages.svg)
 
 
-### Use cases analysis
+### Use case CreateCompany analysis
 Diagrames amb les colaboracions (missatges) entre les vistes, controladors i models. Això brinda traçabilitat a cada cas d'ús, deixen clar quin impacte pot tenir qualsevol canvi al futur.</br>
 ![collaboration](./docs/src/logicView/analysis/collaboration/createCompany.svg)
