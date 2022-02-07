@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="592px" preserveAspectRatio="none" style="width:254px;height:592px;background:#FFFFFF;" version="1.1" viewBox="0 0 254 592" width="254px" zoomAndPan="magnify"><defs><filter height="300%" id="f1uooa5b0zxyow" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[40297e32614dc23b1d0481d801b78db7]
+cluster CreateCompanyCollaboration--><polygon fill="#FFFFFF" filter="url(#f1uooa5b0zxyow)" points="16,6,227,6,234,29.6094,237,29.6094,237,585,16,585,16,6" style="stroke:#000000;stroke-width:1.5;"/><line style="stroke:#000000;stroke-width:1.5;" x1="16" x2="234" y1="29.6094" y2="29.6094"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="205" x="20" y="22.5332">CreateCompanyCollaboration</text><!--MD5=[ff7645581f2d52005f58d5b3b60aec3d]
+entity CreateCompanyCollaboration.User--><ellipse cx="80" cy="51.5" fill="#FEFECE" filter="url(#f1uooa5b0zxyow)" rx="8" ry="8" style="stroke:#A80036;stroke-width:1.5;"/><path d="M80,59.5 L80,86.5 M67,67.5 L93,67.5 M80,86.5 L67,101.5 M80,86.5 L93,101.5 " fill="none" filter="url(#f1uooa5b0zxyow)" style="stroke:#A80036;stroke-width:1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="29" x="65.5" y="121.5332">User</text><!--MD5=[c0eb117e04e39d6202e389569f85fd72]
+class CreateCompanyCollaboration.CreateCompanyView--><rect fill="#FEFECE" filter="url(#f1uooa5b0zxyow)" height="48" id="CreateCompanyCollaboration.CreateCompanyView" style="stroke:#A80036;stroke-width:1.5;" width="148" x="38" y="225"/><ellipse cx="53" cy="241" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M55,237.5 Q55.2031,237 55.4375,236.75 Q55.6719,236.5 55.9375,236.5 Q56.4063,236.5 56.7031,236.7813 Q57,237.0625 57,237.7188 L57,239.2813 Q57,239.9375 56.7188,240.2188 Q56.4375,240.5 56,240.5 Q55.6094,240.5 55.3594,240.3281 Q55.1094,240.1563 55,239.7031 Q54.9531,239.3906 54.7813,239.2188 Q54.4688,238.8906 53.9063,238.7031 Q53.3438,238.5 52.7813,238.5 Q52.0781,238.5 51.4844,238.7813 Q50.9063,239.0625 50.4531,239.6875 Q50,240.3125 50,241.1719 L50,242.0938 Q50,243.125 50.8438,243.8125 Q51.6875,244.5 53.1875,244.5 Q54.0781,244.5 54.7031,244.2969 Q55.0625,244.1875 55.4688,243.8281 Q55.7344,243.625 55.875,243.5625 Q56.0156,243.5 56.1875,243.5 Q56.5156,243.5 56.75,243.7656 Q57,244.0156 57,244.375 Q57,244.7188 56.6563,245.125 Q56.1563,245.7188 55.3594,246.0469 Q54.3125,246.5 53.0313,246.5 Q51.5313,246.5 50.3281,245.9063 Q49.3594,245.4375 48.6719,244.4219 Q48,243.4063 48,242.2031 L48,241.1094 Q48,239.8594 48.5938,238.7656 Q49.2031,237.6719 50.25,237.0938 Q51.3125,236.5 52.5,236.5 Q53.2188,236.5 53.8438,236.75 Q54.4688,237 55,237.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="116" x="67" y="245.9102">CreateCompanyView</text><line style="stroke:#A80036;stroke-width:1.5;" x1="39" x2="185" y1="257" y2="257"/><line style="stroke:#A80036;stroke-width:1.5;" x1="39" x2="185" y1="265" y2="265"/><!--MD5=[cc2c69190ae76a9c15de5abfddb4bd08]
+class CreateCompanyCollaboration.CreateCompanyController--><rect fill="#FEFECE" filter="url(#f1uooa5b0zxyow)" height="48" id="CreateCompanyCollaboration.CreateCompanyController" style="stroke:#A80036;stroke-width:1.5;" width="176" x="38" y="373"/><ellipse cx="53" cy="389" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M55,385.5 Q55.2031,385 55.4375,384.75 Q55.6719,384.5 55.9375,384.5 Q56.4063,384.5 56.7031,384.7813 Q57,385.0625 57,385.7188 L57,387.2813 Q57,387.9375 56.7188,388.2188 Q56.4375,388.5 56,388.5 Q55.6094,388.5 55.3594,388.3281 Q55.1094,388.1563 55,387.7031 Q54.9531,387.3906 54.7813,387.2188 Q54.4688,386.8906 53.9063,386.7031 Q53.3438,386.5 52.7813,386.5 Q52.0781,386.5 51.4844,386.7813 Q50.9063,387.0625 50.4531,387.6875 Q50,388.3125 50,389.1719 L50,390.0938 Q50,391.125 50.8438,391.8125 Q51.6875,392.5 53.1875,392.5 Q54.0781,392.5 54.7031,392.2969 Q55.0625,392.1875 55.4688,391.8281 Q55.7344,391.625 55.875,391.5625 Q56.0156,391.5 56.1875,391.5 Q56.5156,391.5 56.75,391.7656 Q57,392.0156 57,392.375 Q57,392.7188 56.6563,393.125 Q56.1563,393.7188 55.3594,394.0469 Q54.3125,394.5 53.0313,394.5 Q51.5313,394.5 50.3281,393.9063 Q49.3594,393.4375 48.6719,392.4219 Q48,391.4063 48,390.2031 L48,389.1094 Q48,387.8594 48.5938,386.7656 Q49.2031,385.6719 50.25,385.0938 Q51.3125,384.5 52.5,384.5 Q53.2188,384.5 53.8438,384.75 Q54.4688,385 55,385.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="144" x="67" y="393.9102">CreateCompanyController</text><line style="stroke:#A80036;stroke-width:1.5;" x1="39" x2="213" y1="405" y2="405"/><line style="stroke:#A80036;stroke-width:1.5;" x1="39" x2="213" y1="413" y2="413"/><!--MD5=[42fcd642f14f5129f06011faaa25e1b3]
+class CreateCompanyCollaboration.Company--><rect fill="#FEFECE" filter="url(#f1uooa5b0zxyow)" height="48" id="CreateCompanyCollaboration.Company" style="stroke:#A80036;stroke-width:1.5;" width="85" x="50.5" y="521"/><ellipse cx="65.5" cy="537" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M67.5,533.5 Q67.7031,533 67.9375,532.75 Q68.1719,532.5 68.4375,532.5 Q68.9063,532.5 69.2031,532.7813 Q69.5,533.0625 69.5,533.7188 L69.5,535.2813 Q69.5,535.9375 69.2188,536.2188 Q68.9375,536.5 68.5,536.5 Q68.1094,536.5 67.8594,536.3281 Q67.6094,536.1563 67.5,535.7031 Q67.4531,535.3906 67.2813,535.2188 Q66.9688,534.8906 66.4063,534.7031 Q65.8438,534.5 65.2813,534.5 Q64.5781,534.5 63.9844,534.7813 Q63.4063,535.0625 62.9531,535.6875 Q62.5,536.3125 62.5,537.1719 L62.5,538.0938 Q62.5,539.125 63.3438,539.8125 Q64.1875,540.5 65.6875,540.5 Q66.5781,540.5 67.2031,540.2969 Q67.5625,540.1875 67.9688,539.8281 Q68.2344,539.625 68.375,539.5625 Q68.5156,539.5 68.6875,539.5 Q69.0156,539.5 69.25,539.7656 Q69.5,540.0156 69.5,540.375 Q69.5,540.7188 69.1563,541.125 Q68.6563,541.7188 67.8594,542.0469 Q66.8125,542.5 65.5313,542.5 Q64.0313,542.5 62.8281,541.9063 Q61.8594,541.4375 61.1719,540.4219 Q60.5,539.4063 60.5,538.2031 L60.5,537.1094 Q60.5,535.8594 61.0938,534.7656 Q61.7031,533.6719 62.75,533.0938 Q63.8125,532.5 65,532.5 Q65.7188,532.5 66.3438,532.75 Q66.9688,533 67.5,533.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="53" x="79.5" y="541.9102">Company</text><line style="stroke:#A80036;stroke-width:1.5;" x1="51.5" x2="134.5" y1="553" y2="553"/><line style="stroke:#A80036;stroke-width:1.5;" x1="51.5" x2="134.5" y1="561" y2="561"/><!--MD5=[8693a7b6c29cae04a20cad134af713ed]
+link CreateCompanyCollaboration.User to CreateCompanyCollaboration.CreateCompanyView--><path codeLine="5" d="M87.99,125.34 C93.75,154.78 101.38,193.75 106.48,219.79 " fill="none" id="CreateCompanyCollaboration.User-to-CreateCompanyCollaboration.CreateCompanyView" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="107.46,224.82,109.6604,215.2201,106.5014,219.9127,101.8088,216.7538,107.46,224.82" style="stroke:#A80036;stroke-width:1.0;"/><path d="M105,160 L105,186 L225,186 L225,170 L215,160 L105,160 " fill="#FBFB77" filter="url(#f1uooa5b0zxyow)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M215,160 L215,170 L225,170 L215,160 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="99" x="111" y="178.4951">createCompany()</text><!--MD5=[878e175fb54d48dac761b2dcc257697b]
+link CreateCompanyCollaboration.CreateCompanyView to CreateCompanyCollaboration.CreateCompanyController--><path codeLine="9" d="M114.22,273.13 C116.68,298.76 120.64,340.1 123.28,367.66 " fill="none" id="CreateCompanyCollaboration.CreateCompanyView-to-CreateCompanyCollaboration.CreateCompanyController" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="123.79,372.97,126.925,363.6334,123.3193,367.9922,118.9605,364.3865,123.79,372.97" style="stroke:#A80036;stroke-width:1.0;"/><path d="M125,308 L125,334 L229,334 L229,318 L219,308 L125,308 " fill="#FBFB77" filter="url(#f1uooa5b0zxyow)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M219,308 L219,318 L229,318 L219,308 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="83" x="131" y="326.4951">interact(name)</text><!--MD5=[68adfe37be120c676a6b94a188d6e90a]
+link CreateCompanyCollaboration.CreateCompanyController to CreateCompanyCollaboration.Company--><path codeLine="13" d="M120.77,421.13 C114.95,446.87 105.56,488.45 99.33,516 " fill="none" id="CreateCompanyCollaboration.CreateCompanyController-to-CreateCompanyCollaboration.Company" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="98.2,520.97,104.0841,513.0721,99.3013,516.0928,96.2806,511.31,98.2,520.97" style="stroke:#A80036;stroke-width:1.0;"/><path d="M118,456 L118,482 L225,482 L225,466 L215,456 L118,456 " fill="#FBFB77" filter="url(#f1uooa5b0zxyow)" style="stroke:#A80036;stroke-width:1.0;"/><path d="M215,456 L215,466 L225,466 L215,456 " fill="#FBFB77" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="86" x="124" y="474.4951">execute(name)</text><!--MD5=[ea82ea670a200d65ee8e639f16d033e6]
+@startuml
+allow_mixing
+' left to right direction
+namespace CreateCompanyCollaboration{
+actor User
+User - -> CreateCompanyView
+    note on link
+        createCompany()
+    end note
+CreateCompanyView - -> CreateCompanyController
+    note on link
+        interact(name)
+    end note
+CreateCompanyController - -> Company
+    note on link
+        execute(name)
+    end note
+}
+@enduml
+
+@startuml
+allow_mixing
+namespace CreateCompanyCollaboration{
+actor User
+User - -> CreateCompanyView
+    note on link
+        createCompany()
+    end note
+CreateCompanyView - -> CreateCompanyController
+    note on link
+        interact(name)
+    end note
+CreateCompanyController - -> Company
+    note on link
+        execute(name)
+    end note
+}
+@enduml
+
+PlantUML version 1.2021.16(Wed Dec 08 18:25:22 CET 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: es
+Country: ES
+--></g></svg>

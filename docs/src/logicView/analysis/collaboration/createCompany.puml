@@ -1,22 +1,19 @@
 @startuml
-'title EditConfigCollaborationDiagram
-namespace CreateCompanyCollaboration{
 allow_mixing
 ' left to right direction
-
+namespace CreateCompanyCollaboration{
 actor User
-
-object CreateCompanyView
-object CreateCompanyController
-object CreateCompanyModel
-
 User --> CreateCompanyView
-note on link
-    setName(param)
-end note
-CreateCompanyView ..> CreateCompanyController : interact(EditConfigController)
-
-CreateCompanyCollaboration --> CreateCompanyModel
-
+    note on link
+        createCompany()
+    end note
+CreateCompanyView --> CreateCompanyController
+    note on link
+        interact(name)
+    end note
+CreateCompanyController --> Company
+    note on link
+        execute(name)
+    end note
 }
 @enduml
