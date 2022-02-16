@@ -12,7 +12,7 @@ state invalidCompanyName <<choice>>
 
 OPENED_APPLICATION -[#green]-> creatingCompany
 note on link #white
-  <b>Player requests to
+  <b>User requests to
   Create a new company
 end note
 
@@ -24,7 +24,7 @@ end note
 
 creatingCompany2 -[#green]-> invalidCompanyName
 note on link
-  <b>Player provides
+  <b>User provides
   Company name
 end note
 

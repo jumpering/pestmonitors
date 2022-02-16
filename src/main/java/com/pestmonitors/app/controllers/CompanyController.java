@@ -7,9 +7,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+import java.util.Optional;
+
 @RestController
 public class CompanyController {
-
 
     @Autowired
     private CompanyService companyService;
@@ -22,13 +23,20 @@ public class CompanyController {
 
     @GetMapping("/companies/{id}")
     public CompanyDTO getCompanyById(@PathVariable Integer id) {
-        return this.companyService.getCompanyById(id);
+        Optional<CompanyDTO> optCompany = this.companyService.getCompanyById(id);
+//        try{
+//            CompanyDTO companyDTO = optCompany.orElseThrow(NoSuchElementException::new);
+//            return companyDTO;
+//        } catch (NoSuchElementException e){
+//            return null;
+//        }
+        return optCompany.orElse(null);
     }
 
     @PostMapping("/companies")
     public CompanyDTO createCompany(@RequestBody CompanyDTO companyDTO) {
-        this.companyService.createCompany(companyDTO);
-        return companyDTO;
+        Optional<CompanyDTO> optCompany = this.companyService.createCompany(companyDTO);
+        return optCompany.orElse(null);
     }
 
     @DeleteMapping("/companies/{id}")
