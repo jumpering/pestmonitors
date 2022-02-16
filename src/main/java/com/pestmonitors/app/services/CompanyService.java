@@ -1,20 +1,27 @@
 package com.pestmonitors.app.services;
 
+import com.pestmonitors.app.dao.entities.CompanyEntity;
+import com.pestmonitors.app.dao.repositories.CompanyRepository;
 import com.pestmonitors.app.models.CompanyDTO;
+import org.modelmapper.ModelMapper;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @Service
 public class CompanyService {
 
-    private List<CompanyDTO> mockedList = List.of(new CompanyDTO(1, "Supsa"), new CompanyDTO(2, "Mercadona"));
+    @Autowired
+    private CompanyRepository companyRepository;
+    private ModelMapper modelMapper = new ModelMapper();
 
     public Optional<CompanyDTO> createCompany(CompanyDTO companyDTO) {
-        
-        this.mockedList.add(companyDTO);
-        this.mockedList.add(new CompanyDTO(100,"Dia"));
+        CompanyEntity companyEntity = this.modelMapper.map(companyDTO, CompanyEntity.class);
+        companyEntity = this.companyRepository.save(companyEntity);
+        companyDTO = this.modelMapper.map(companyEntity, CompanyDTO.class);
         Optional<CompanyDTO> optCompany =  Optional.of(companyDTO);
         return optCompany;
     }
@@ -23,11 +30,15 @@ public class CompanyService {
     }
 
     public List<CompanyDTO> getAllCompanies() {
-        return this.mockedList;
+        List<CompanyEntity> companyEntities = this.companyRepository.findAll();
+        //companyEntities.forEach(e -> System.out.println(e.toString()));
+        List<CompanyDTO> companyDTOS = new ArrayList<>();
+        companyEntities.forEach(element -> companyDTOS.add(this.modelMapper.map(element, CompanyDTO.class)));
+        return companyDTOS;
     }
 
     public Optional<CompanyDTO> getCompanyById(Integer id) {
-        Optional<CompanyDTO> optCompany = this.mockedList.stream().filter(element -> element.getId().equals(id)).findFirst();
-        return optCompany;
+        CompanyEntity companyEntity = this.companyRepository.getById(id);
+        return Optional.of(this.modelMapper.map(companyEntity, CompanyDTO.class));
     }
 }

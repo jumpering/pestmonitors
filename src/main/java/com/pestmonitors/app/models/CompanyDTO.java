@@ -1,17 +1,14 @@
 package com.pestmonitors.app.models;
 
 import lombok.Data;
-import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
+import lombok.NoArgsConstructor;
 
 @Data
-@RequiredArgsConstructor
+@NoArgsConstructor
 public class CompanyDTO {
 
-    @NonNull
     private Integer id;
 
-    @NonNull
     private String name;
 
     private Integer telf;
