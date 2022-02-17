@@ -22,13 +22,6 @@ public class CompanyEntity {
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "company_entity_id")
-    private List<Headquarter> headquarters = new ArrayList<>();
+    private List<HeadquarterEntity> headquarters = new ArrayList<>();
 
-    public List<Headquarter> getHeadquarters() {
-        return headquarters;
-    }
-
-    public void setHeadquarters(List<Headquarter> headquarters) {
-        this.headquarters = headquarters;
-    }
 }

@@ -18,6 +18,19 @@ public class CompanyService {
     private CompanyRepository companyRepository;
     private ModelMapper modelMapper = new ModelMapper();
 
+    public List<CompanyDTO> getAllCompanies() {
+        List<CompanyEntity> companyEntities = this.companyRepository.findAll();
+        //companyEntities.forEach(e -> System.out.println(e.toString())); //TRAZA!
+        List<CompanyDTO> companyDTOS = new ArrayList<>();
+        companyEntities.forEach(element -> companyDTOS.add(this.modelMapper.map(element, CompanyDTO.class)));
+        return companyDTOS;
+    }
+
+    public Optional<CompanyDTO> getCompanyById(Integer id) {
+        CompanyEntity companyEntity = this.companyRepository.getById(id);
+        return Optional.of(this.modelMapper.map(companyEntity, CompanyDTO.class));
+    }
+
     public Optional<CompanyDTO> createCompany(CompanyDTO companyDTO) {
         CompanyEntity companyEntity = this.modelMapper.map(companyDTO, CompanyEntity.class);
         companyEntity = this.companyRepository.save(companyEntity);
@@ -27,18 +40,5 @@ public class CompanyService {
     }
 
     public void deleteCompany(Integer id) {
-    }
-
-    public List<CompanyDTO> getAllCompanies() {
-        List<CompanyEntity> companyEntities = this.companyRepository.findAll();
-        //companyEntities.forEach(e -> System.out.println(e.toString()));
-        List<CompanyDTO> companyDTOS = new ArrayList<>();
-        companyEntities.forEach(element -> companyDTOS.add(this.modelMapper.map(element, CompanyDTO.class)));
-        return companyDTOS;
-    }
-
-    public Optional<CompanyDTO> getCompanyById(Integer id) {
-        CompanyEntity companyEntity = this.companyRepository.getById(id);
-        return Optional.of(this.modelMapper.map(companyEntity, CompanyDTO.class));
     }
 }
