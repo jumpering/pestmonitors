@@ -1,7 +1,13 @@
 package com.pestmonitors.app.controllers;
 
+import com.pestmonitors.app.dao.entities.CompanyEntity;
+import com.pestmonitors.app.dao.entities.HeadquarterEntity;
+import com.pestmonitors.app.dao.repositories.CompanyRepository;
+import com.pestmonitors.app.dao.repositories.HeadquarterRepository;
 import com.pestmonitors.app.models.CompanyDTO;
+import com.pestmonitors.app.models.HeadquarterDTO;
 import com.pestmonitors.app.services.CompanyService;
+import com.pestmonitors.app.services.HeadquarterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,6 +20,9 @@ public class CompanyController {
 
     @Autowired
     private CompanyService companyService;
+
+    @Autowired
+    private HeadquarterService headquarterService;
 
     @GetMapping("/companies")
     public List<CompanyDTO> getAllCompanies() {
@@ -44,4 +53,9 @@ public class CompanyController {
         this.companyService.deleteCompany(id);
     }
 
+    //recurso anidado: hago get de los headquarters
+    @GetMapping("/companies/{id}/headquarters")
+    public List<HeadquarterDTO> getCompanyHeadquarters(@PathVariable Integer id){
+        return this.headquarterService.getByCompanyId(id);
+    }
 }

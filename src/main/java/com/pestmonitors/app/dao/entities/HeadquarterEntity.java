@@ -2,13 +2,13 @@ package com.pestmonitors.app.dao.entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import net.minidev.json.annotate.JsonIgnore;
 
 import javax.persistence.*;
 
 @Data
 @NoArgsConstructor
-@Entity
-@Table(name = "headquarters")
+@Entity(name = "headquarters")
 public class HeadquarterEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,9 +18,13 @@ public class HeadquarterEntity {
     @Column(name = "name", nullable = false, unique = true)
     private String name;
 
-    @Column(name = "adress")
-    private String adress;
+    @Column(name = "address")
+    private String address;
 
     @Column(name = "city")
     private String city;
+
+    @ManyToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    //@JsonIgnore
+    private CompanyEntity company;
 }

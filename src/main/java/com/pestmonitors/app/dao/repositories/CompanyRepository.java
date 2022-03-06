@@ -10,6 +10,7 @@ import java.util.List;
 @Repository
 public interface CompanyRepository extends JpaRepository<CompanyEntity, Integer> {
 
-    List<CompanyEntity> findByHeadquartersIs(HeadquarterEntity headquarters);
-    public CompanyEntity getByNameContains(String contains);
+//    List<CompanyEntity> findByHeadquartersIs(HeadquarterEntity headquarters);
+//
+//    CompanyEntity getByNameContains(String contains);
 }

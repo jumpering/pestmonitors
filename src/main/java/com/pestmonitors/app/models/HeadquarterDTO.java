@@ -1,20 +1,24 @@
 package com.pestmonitors.app.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NonNull;
+import com.pestmonitors.app.dao.entities.CompanyEntity;
+import lombok.*;
 
 import java.io.Serializable;
 
-@AllArgsConstructor
+@NoArgsConstructor
+@RequiredArgsConstructor
 @Data
 public class HeadquarterDTO implements Serializable {
-    private final Integer id;
+    private Integer id;
 
     @NonNull
-    private final String name;
+    private String name;
 
-    private final String adress;
+    private String address;
 
-    private final String city;
+    private String city;
+
+    private CompanyEntity company;
+
+
 }
