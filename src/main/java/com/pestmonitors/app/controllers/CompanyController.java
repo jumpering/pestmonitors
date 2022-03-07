@@ -29,7 +29,7 @@ public class CompanyController {
     }
 
     @GetMapping("/companies")
-    public List<CompanyDTO> getAllCompaniesRelations(@RequestParam (name = "relations") boolean relations) {
+    public List<CompanyDTO> getAllCompaniesRelations(@RequestParam (value = "relations") boolean relations) {
         List<CompanyDTO> companiesList = this.companyService.getAllCompaniesRelations(relations);
         return companiesList;
     }
