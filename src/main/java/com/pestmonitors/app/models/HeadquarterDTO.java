@@ -1,14 +1,17 @@
 package com.pestmonitors.app.models;
 
 import com.pestmonitors.app.dao.entities.CompanyEntity;
+import com.pestmonitors.app.dao.entities.MapEntity;
 import lombok.*;
 
 import java.io.Serializable;
+import java.util.List;
 
 @NoArgsConstructor
 @RequiredArgsConstructor
 @Data
-public class HeadquarterDTO implements Serializable {
+public class HeadquarterDTO {
+
     private Integer id;
 
     @NonNull
@@ -20,5 +23,5 @@ public class HeadquarterDTO implements Serializable {
 
     private CompanyEntity company;
 
-
+    private List<MapEntity> maps;
 }

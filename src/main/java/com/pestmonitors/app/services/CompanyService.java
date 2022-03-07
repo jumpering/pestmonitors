@@ -27,11 +27,21 @@ public class CompanyService {
 
     public List<CompanyDTO> getAllCompanies() {
         List<CompanyEntity> companyEntities = this.companyRepository.findAll();
-        //companyEntities.forEach(e -> System.out.println(e.toString())); //TRAZA!
         List<CompanyDTO> companyDTOS = new ArrayList<>();
         companyEntities.forEach(element -> companyDTOS.add(this.modelMapper.map(element, CompanyDTO.class)));
         return companyDTOS;
     }
+
+    public List<CompanyDTO> getAllCompaniesRelations(boolean relations) {
+        if (!relations) {
+            List<CompanyEntity> companyEntities = this.companyRepository.findAllWithoutRelations();
+            List<CompanyDTO> companyDTOS = new ArrayList<>();
+            companyEntities.forEach(element -> companyDTOS.add(this.modelMapper.map(element, CompanyDTO.class)));
+            return companyDTOS;
+        }
+        return this.getAllCompanies();
+    }
+
 
     public Optional<CompanyDTO> getCompanyById(Integer id) {
         CompanyEntity companyEntity = this.companyRepository.getById(id);
@@ -46,25 +56,12 @@ public class CompanyService {
         return optCompany;
     }
 
-    public Optional<CompanyEntity> createCompanyV2(CompanyEntity companyEntity) {
-        //CompanyEntity companyEntity = this.modelMapper.map(companyDTO, CompanyEntity.class);
-        companyEntity = this.companyRepository.save(companyEntity);
-        //companyDTO = this.modelMapper.map(companyEntity, CompanyDTO.class);
-        Optional<CompanyEntity> optCompany =  Optional.of(companyEntity);
-        return optCompany;
-    }
-
-
-//    public CompanyDTO createHeadquarterCompany(Integer companyId, HeadquarterDTO headquarterDTO){
-//        CompanyEntity companyEntity = this.companyRepository.getById(companyId);
-//        //INSERT headquarter
-//
-//        HeadquarterEntity headquarterEntity = this.modelMapper.map(headquarterDTO, HeadquarterEntity.class);
-//        this.headquarterRepository.save(headquarterEntity);
-//        return null;
-//    }
-
     public void deleteCompany(Integer id) {
         this.companyRepository.deleteById(id);
+    }
+
+    public Optional<CompanyDTO> getCompanyByName(String name) {
+        CompanyEntity companyEntity = this.companyRepository.findByName(name);
+        return Optional.of(this.modelMapper.map(companyEntity, CompanyDTO.class));
     }
 }

@@ -4,18 +4,23 @@ import com.pestmonitors.app.dao.entities.HeadquarterEntity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.NonNull;
-import java.util.List;
+import lombok.RequiredArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class CompanyDTO {
+@RequiredArgsConstructor
+public class MapDTO {
 
     private Integer id;
 
     @NonNull
     private String name;
 
-    private Integer telf;
+    private String urlFile;
 
-    private List<HeadquarterEntity> headquarters;
+    private boolean active;
+
+    //private List<SensorEntity> sensors; //TODO
+
+    private HeadquarterEntity headquarter;
 }

@@ -1,13 +1,10 @@
 package com.pestmonitors.app.controllers;
 
-import com.pestmonitors.app.dao.entities.CompanyEntity;
-import com.pestmonitors.app.dao.entities.HeadquarterEntity;
-import com.pestmonitors.app.dao.repositories.CompanyRepository;
-import com.pestmonitors.app.dao.repositories.HeadquarterRepository;
 import com.pestmonitors.app.models.CompanyDTO;
 import com.pestmonitors.app.models.HeadquarterDTO;
 import com.pestmonitors.app.services.CompanyService;
 import com.pestmonitors.app.services.HeadquarterService;
+import io.swagger.annotations.Api;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,6 +13,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
+@Api(tags = "Company API Rest")
 public class CompanyController {
 
     @Autowired
@@ -30,15 +28,21 @@ public class CompanyController {
         return companiesList;
     }
 
+    @GetMapping("/companies")
+    public List<CompanyDTO> getAllCompaniesRelations(@RequestParam (name = "relations") boolean relations) {
+        List<CompanyDTO> companiesList = this.companyService.getAllCompaniesRelations(relations);
+        return companiesList;
+    }
+
     @GetMapping("/companies/{id}")
     public CompanyDTO getCompanyById(@PathVariable Integer id) {
         Optional<CompanyDTO> optCompany = this.companyService.getCompanyById(id);
-//        try{
-//            CompanyDTO companyDTO = optCompany.orElseThrow(NoSuchElementException::new);
-//            return companyDTO;
-//        } catch (NoSuchElementException e){
-//            return null;
-//        }
+        return optCompany.orElse(null);
+    }
+
+    @GetMapping("/companies/")
+    public CompanyDTO getCompanyByName(@RequestParam(value = "name")  String name) {
+        Optional<CompanyDTO> optCompany = this.companyService.getCompanyByName(name);
         return optCompany.orElse(null);
     }
 
@@ -53,7 +57,7 @@ public class CompanyController {
         this.companyService.deleteCompany(id);
     }
 
-    //recurso anidado: hago get de los headquarters
+    //nested
     @GetMapping("/companies/{id}/headquarters")
     public List<HeadquarterDTO> getCompanyHeadquarters(@PathVariable Integer id){
         return this.headquarterService.getByCompanyId(id);
