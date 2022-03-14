@@ -1,7 +1,7 @@
 package com.pestmonitors.app.dao.repositories;
 
 import com.pestmonitors.app.dao.entities.CompanyEntity;
-import com.pestmonitors.app.models.projections.CompanyBasicDTO;
+import com.pestmonitors.app.models.projections.CompanyWithoutRelationsDTO;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -12,7 +12,8 @@ import java.util.List;
 public interface CompanyRepository extends JpaRepository<CompanyEntity, Integer> {
 
     @Query(value = "select c.id, c.name, c.telf from companies c", nativeQuery = true)
-    List<CompanyBasicDTO> findAllBasic();
+    List<CompanyWithoutRelationsDTO> findAllWithoutRelations();
 
-    CompanyEntity findByName(String name);
+    boolean existsCompanyEntityByName(String name);
+
 }

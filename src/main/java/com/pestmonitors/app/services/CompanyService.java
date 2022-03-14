@@ -3,11 +3,9 @@ package com.pestmonitors.app.services;
 import com.pestmonitors.app.dao.entities.CompanyEntity;
 import com.pestmonitors.app.dao.repositories.CompanyRepository;
 import com.pestmonitors.app.models.CompanyDTO;
-import com.pestmonitors.app.models.projections.CompanyBasicDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -28,12 +26,6 @@ public class CompanyService {
         return companyDTOS;
     }
 
-    public List<CompanyBasicDTO> findAllBasic() {
-        List<CompanyBasicDTO> companyBasicDTOS;
-        companyBasicDTOS = this.companyRepository.findAllBasic();
-        return companyBasicDTOS;
-    }
-
     public Optional<CompanyDTO> getCompanyById(Integer id) {
         Optional<CompanyDTO> optionalCompanyDTO = Optional.empty();
         if (this.companyRepository.existsById(id)){
@@ -44,14 +36,58 @@ public class CompanyService {
         return optionalCompanyDTO;
     }
 
-    public Optional<CompanyDTO> createCompany(CompanyDTO companyDTO) {
-        CompanyEntity companyEntity = this.modelMapper.map(companyDTO, CompanyEntity.class);
-        companyEntity = this.companyRepository.save(companyEntity);
-        companyDTO = this.modelMapper.map(companyEntity, CompanyDTO.class);
-        return Optional.of(companyDTO);
+    public boolean existCompanyByName(String name){
+        return this.companyRepository.existsCompanyEntityByName(name);
     }
 
-    public void deleteCompany(Integer id) {
+    public Optional<CompanyDTO> createCompany(CompanyDTO companyDTO) {
+        Optional<CompanyDTO> optionalCompanyDTO = Optional.empty();
+        if (!this.companyRepository.existsCompanyEntityByName(companyDTO.getName())){
+            CompanyEntity companyEntity = this.modelMapper.map(companyDTO, CompanyEntity.class);
+            companyEntity = this.companyRepository.save(companyEntity);
+            companyDTO = this.modelMapper.map(companyEntity, CompanyDTO.class);
+            optionalCompanyDTO = Optional.of(companyDTO);
+        }
+        return optionalCompanyDTO;
+    }
+
+    public CompanyDTO deleteCompany(Integer id) {
+        if (!this.companyRepository.existsById(id)){
+            return null;
+        }
+        CompanyEntity companyEntity = this.companyRepository.getById(id);
+        CompanyDTO companyDTO = this.modelMapper.map(companyEntity, CompanyDTO.class);
         this.companyRepository.deleteById(id);
+        return companyDTO;
+    }
+
+    public Optional<CompanyDTO> updateCompany(CompanyDTO companyDTO, Integer id) {
+        if (!this.companyRepository.existsById(id)){
+            return Optional.empty();
+        }
+//        CompanyEntity companyEntity = this.companyRepository.getById(id);
+//        CompanyDTO companyDTOUpdate = this.modelMapper.map(companyEntity, CompanyDTO.class);
+//        if (!companyDTO.getName().equals(companyDTOUpdate.getName())){
+//            companyDTOUpdate.setName(companyDTO.getName());
+//        }
+//        companyDTOUpdate.setTelf(companyDTO.getTelf());
+//        companyDTOUpdate.setDescription(companyDTO.getDescription());
+//        companyDTOUpdate.setCIF(companyDTO.getCIF());
+//        companyEntity = this.modelMapper.map(companyDTOUpdate, CompanyEntity.class);
+//        this.companyRepository.save(companyEntity);
+//        return Optional.of(companyDTOUpdate);
+
+
+        CompanyDTO finalCompanyDTO = companyDTO;
+        CompanyEntity companyEntity = this.companyRepository.findById(id)
+                .map(company -> {
+                    company.setName(finalCompanyDTO.getName());
+                    company.setTelf(finalCompanyDTO.getTelf());
+                    company.setDescription(finalCompanyDTO.getDescription());
+                    company.setCIF(finalCompanyDTO.getCIF());
+                    return this.companyRepository.save(company);
+                }).get();
+        companyDTO = this.modelMapper.map(companyEntity, CompanyDTO.class);
+        return Optional.of(companyDTO);
     }
 }

@@ -1,17 +1,13 @@
 package com.pestmonitors.app.dao.entities;
 
-import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import net.minidev.json.annotate.JsonIgnore;
-
 import javax.persistence.*;
 import java.util.List;
 
 @Data
 @NoArgsConstructor
 @Entity(name = "companies")
-@JsonIgnoreProperties({"hibernateLazyInitializer","handler","headquarters"})
 public class CompanyEntity {
 
     @Id
@@ -25,7 +21,14 @@ public class CompanyEntity {
     @Column(name = "telf")
     private Integer telf;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @Lob
+    @Column(name = "description")
+    private String description;
+
+    @Column(name = "CIF")
+    private String CIF;
+
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "company_id", referencedColumnName = "id")
     private List<HeadquarterEntity> headquarters;
 }

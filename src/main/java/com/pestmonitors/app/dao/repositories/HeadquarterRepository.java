@@ -16,4 +16,5 @@ public interface HeadquarterRepository extends JpaRepository<HeadquarterEntity, 
 
     List<HeadquarterEntity> findByCompanyId(Integer id);
 
+    boolean existsHeadquarterByName(String name);
 }
