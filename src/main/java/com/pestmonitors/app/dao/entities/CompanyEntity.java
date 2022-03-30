@@ -2,6 +2,8 @@ package com.pestmonitors.app.dao.entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import lombok.RequiredArgsConstructor;
+
 import javax.persistence.*;
 import java.util.List;
 

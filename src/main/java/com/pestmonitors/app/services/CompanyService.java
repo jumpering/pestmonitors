@@ -2,13 +2,17 @@ package com.pestmonitors.app.services;
 
 import com.pestmonitors.app.dao.entities.CompanyEntity;
 import com.pestmonitors.app.dao.repositories.CompanyRepository;
+import com.pestmonitors.app.dao.specifications.CompanySpecification;
 import com.pestmonitors.app.models.CompanyDTO;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class CompanyService {
@@ -65,19 +69,6 @@ public class CompanyService {
         if (!this.companyRepository.existsById(id)){
             return Optional.empty();
         }
-//        CompanyEntity companyEntity = this.companyRepository.getById(id);
-//        CompanyDTO companyDTOUpdate = this.modelMapper.map(companyEntity, CompanyDTO.class);
-//        if (!companyDTO.getName().equals(companyDTOUpdate.getName())){
-//            companyDTOUpdate.setName(companyDTO.getName());
-//        }
-//        companyDTOUpdate.setTelf(companyDTO.getTelf());
-//        companyDTOUpdate.setDescription(companyDTO.getDescription());
-//        companyDTOUpdate.setCIF(companyDTO.getCIF());
-//        companyEntity = this.modelMapper.map(companyDTOUpdate, CompanyEntity.class);
-//        this.companyRepository.save(companyEntity);
-//        return Optional.of(companyDTOUpdate);
-
-
         CompanyDTO finalCompanyDTO = companyDTO;
         CompanyEntity companyEntity = this.companyRepository.findById(id)
                 .map(company -> {
@@ -90,4 +81,24 @@ public class CompanyService {
         companyDTO = this.modelMapper.map(companyEntity, CompanyDTO.class);
         return Optional.of(companyDTO);
     }
+
+    //with criteria on repository
+//    public ResponseEntity<List<CompanyDTO>> findCompanyByNameAndTelf(String name, Integer telf) {
+//        List<CompanyEntity> companyEntities = this.companyRepository.findByNameAndTelf(name, telf);
+//        List<CompanyDTO> companyDTOS = companyEntities.stream().map(e -> this.modelMapper.map(e, CompanyDTO.class)).collect(Collectors.toList());
+//
+//        return ResponseEntity.ok(companyDTOS);
+//    }
+
+    //with specification on repository
+    public ResponseEntity<List<CompanyDTO>> findCompanyByNameAndTelf(String name, Integer telf) {
+        Specification<CompanyEntity> specification = Specification.where(CompanySpecification.hasName(name)
+                                                    .and(CompanySpecification.hasTelf(telf)));
+
+        List<CompanyEntity> companyEntities = this.companyRepository.findAll(specification);
+        List<CompanyDTO> companyDTOS = companyEntities.stream().map(e -> this.modelMapper.map(e, CompanyDTO.class)).collect(Collectors.toList());
+
+        return ResponseEntity.ok(companyDTOS);
+    }
+
 }

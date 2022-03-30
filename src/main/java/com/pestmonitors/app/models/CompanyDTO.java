@@ -1,12 +1,9 @@
 package com.pestmonitors.app.models;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 import com.pestmonitors.app.dao.entities.HeadquarterEntity;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-import lombok.NonNull;
+import lombok.*;
 //import net.minidev.json.annotate.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.hateoas.RepresentationModel;
@@ -15,6 +12,9 @@ import javax.validation.constraints.NotNull;
 import java.util.List;
 
 @Data
+@Builder
+@RequiredArgsConstructor //agregado a posteriori para test
+@AllArgsConstructor //agregado para builder y test
 @NoArgsConstructor
 @JsonPropertyOrder({ "cif","name","description","telf"})
 @JsonIgnoreProperties("links")

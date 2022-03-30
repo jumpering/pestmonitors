@@ -6,6 +6,7 @@ import com.pestmonitors.app.services.CompanyService;
 import com.pestmonitors.app.services.HeadquarterService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.domain.Specification;
 import org.springframework.hateoas.Link;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -36,6 +37,8 @@ public class CompanyController {
         for (CompanyDTO companyDTO : companyDTOList) {//hateoas
             Link withSelfRel = linkTo(methodOn(CompanyController.class).getCompanyById(companyDTO.getId())).withSelfRel();
             companyDTO.add(withSelfRel);
+
+//Este para agregar hateoas con clase relacionada
 //            Link headquartersRel = linkTo(methodOn(CompanyController.class).getCompanyById(companyDTO.getId()))
 //                    .withRel("headquarters");
 //            companyDTO.add(headquartersRel);
@@ -49,6 +52,13 @@ public class CompanyController {
                     .collect(Collectors.toList());
         }
     return ResponseEntity.ok(companyDTOList);
+    }
+
+    @GetMapping("/companies/{name}/{telf}")
+    public ResponseEntity<List<CompanyDTO>> findCompanyByNameAndTelf(@PathVariable String name,
+                                                     @PathVariable Integer telf){
+        //with criteria or specification ..on service decision
+        return this.companyService.findCompanyByNameAndTelf(name, telf);
     }
 
     @GetMapping("/companies/{id}")
