@@ -6,7 +6,6 @@ import com.pestmonitors.app.services.CompanyService;
 import com.pestmonitors.app.services.HeadquarterService;
 import io.swagger.annotations.*;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.domain.Specification;
 import org.springframework.hateoas.Link;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -31,8 +30,8 @@ public class CompanyController {
     private HeadquarterService headquarterService;
 
     @GetMapping("/companies") //not sense requestParam name, because name is unique on bd...
-    public ResponseEntity<List<CompanyDTO>> getAllCompanies(@RequestParam(required = false)String name){
-        List<CompanyDTO> companyDTOList = this.companyService.getAllCompanies();
+    public ResponseEntity<List<CompanyDTO>> findAllCompanies(@RequestParam(value = "name", required = false)String name){
+        List<CompanyDTO> companyDTOList = this.companyService.findAllCompanies();
 
         for (CompanyDTO companyDTO : companyDTOList) {//hateoas
             Link withSelfRel = linkTo(methodOn(CompanyController.class).getCompanyById(companyDTO.getId())).withSelfRel();
@@ -57,7 +56,7 @@ public class CompanyController {
     @GetMapping("/companies/{name}/{telf}")
     public ResponseEntity<List<CompanyDTO>> findCompanyByNameAndTelf(@PathVariable String name,
                                                      @PathVariable Integer telf){
-        //with criteria or specification ..on service decision
+        //with criteria or specification, on service decision
         return this.companyService.findCompanyByNameAndTelf(name, telf);
     }
 

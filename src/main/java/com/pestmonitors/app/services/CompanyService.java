@@ -22,7 +22,7 @@ public class CompanyService {
 
     private final ModelMapper modelMapper = new ModelMapper();
 
-    public List<CompanyDTO> getAllCompanies() {
+    public List<CompanyDTO> findAllCompanies() {
         List<CompanyEntity> companyEntities;
         List<CompanyDTO> companyDTOS = new ArrayList<>();
         companyEntities = this.companyRepository.findAll();
