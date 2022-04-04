@@ -13,8 +13,8 @@ User  o--> "*" Sensor
 User o--> "*" Company
 Company o--> "*" Headquarter
 Headquarter o--> "*" Map
-Map -down-|> GoogleMaps
-Map -down-|> Image
+GoogleMaps -up-|> Map
+Image -up-|> Map
 
 Sensor --> "1" Map
 Sensor --> "*" RegisterLog

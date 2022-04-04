@@ -52,18 +52,7 @@ public class CompanyServiceTest {
 
     @Test
     public void givenListOfCompaniesWhenCompanyServiceFindAllThenReturnList(){
-//        this.companyDTOList = new ArrayList<>();
-//        CompanyDTO companyDTO1 = new CompanyDTO().builder().id(1).name("xavi").build();
-//        CompanyDTO companyDTO2 = new CompanyDTO().builder().id(2).name("marteta").build();
-//        this.companyDTOList.add(companyDTO1);
-//        this.companyDTOList.add(companyDTO2);
-//        List<CompanyEntity> companyEntityList = new ArrayList<>();
-//        for (CompanyDTO companyDTO : companyDTOList ){
-//            companyEntityList.add(this.modelMapper.map(companyDTO, CompanyEntity.class));
-//        }
         Mockito.when(this.companyRepository.findAll()).thenReturn(companyEntityList);
-
-
 
         List<CompanyDTO> companyDTOListExpected = companyDTOList;
         assertEquals(companyDTOListExpected, this.companyService.findAllCompanies());
@@ -95,15 +84,4 @@ public class CompanyServiceTest {
         assertEquals(optionalCompanyDTO, this.companyService.createCompany(companyDTOExpected));
     }
 
-//    @Test
-//    public void givenWrongCompanyDTOWhenCompanyServiceCreateCompanyThenReturnOptionalEmpty(){
-//        CompanyDTO companyDTOExpected = new CompanyDTO().builder().name("xavi").build();
-//        CompanyEntity companyEntity = this.modelMapper.map(companyDTOExpected, CompanyEntity.class);
-//        //Optional<CompanyDTO> optionalCompanyDTO = Optional.of(companyDTOExpected);
-//        Mockito.when(this.companyRepository.save(companyEntity)).thenReturn(companyEntity);
-//
-//
-//        Optional<CompanyDTO> optionalCompanyDTO = Optional.empty();
-//        assertEquals(optionalCompanyDTO, this.companyService.createCompany(companyDTOExpected));
-//    }
 }

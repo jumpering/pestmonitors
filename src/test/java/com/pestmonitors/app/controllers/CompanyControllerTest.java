@@ -14,6 +14,7 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
@@ -43,7 +44,7 @@ public class CompanyControllerTest {
     }
 
     @Test
-    public void givenCompaniesWhenCompanyFindAllThenReturnAllCompanies() throws Exception {
+    public void givenCompaniesWhenCompanyFindAllThenReturnAllCompaniesAndExpectedJSON() throws Exception {
         Mockito.when(this.companyService.findAllCompanies()).thenReturn(companyDTOList);
         this.mockMvc.perform(get("/companies"))
                 .andExpect(status().isOk())
@@ -65,5 +66,20 @@ public class CompanyControllerTest {
         Mockito.when(this.companyService.existCompanyByName("xavi")).thenReturn(true);
         this.mockMvc.perform(get("/companies").param("name","xavi"))
                         .andExpect(status().isOk());
+    }
+
+    @Test
+    void givenWrongIdWhenFindByIdThenReturnHttpStatusResourceNotFound() throws Exception{
+        Mockito.when(this.companyService.getCompanyById(1)).thenReturn(Optional.empty());
+        this.mockMvc.perform(get("/companies/1"))
+                .andExpect(status().isNotFound());
+    }
+
+    @Test
+    void givenCorrectIdWhenFindByIdThenReturnHttpStatusOkAndExpectedJSON() throws Exception{
+        Mockito.when(this.companyService.getCompanyById(1)).thenReturn(Optional.of(companyDTOList.get(0)));
+        this.mockMvc.perform(get("/companies/1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.name", Matchers.is("xavi")));
     }
 }
