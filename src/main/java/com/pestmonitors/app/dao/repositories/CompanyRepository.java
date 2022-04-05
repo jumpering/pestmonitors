@@ -11,8 +11,8 @@ import java.util.List;
 
 @Repository
 public interface CompanyRepository extends JpaRepository<CompanyEntity, Integer>,
-        CompanyCustomRepository,
-        JpaSpecificationExecutor<CompanyEntity> {
+        CompanyCustomRepository, //para criteria repository
+        JpaSpecificationExecutor<CompanyEntity> { //para specifications
 
     @Query(value = "select c.id, c.name, c.telf from companies c", nativeQuery = true)
     List<CompanyWithoutRelationsDTO> findAllWithoutRelations();

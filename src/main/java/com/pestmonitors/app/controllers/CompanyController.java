@@ -9,9 +9,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.Link;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import javax.validation.Valid;
+import javax.validation.constraints.Positive;
 import java.net.URI;
 import java.util.List;
 import java.util.Optional;
@@ -29,7 +31,7 @@ public class CompanyController {
     @Autowired
     private HeadquarterService headquarterService;
 
-    @GetMapping("/companies") //not sense requestParam name, because name is unique on bd...
+    @GetMapping("/companies") //not sense requestParam name, because name is unique on bd, for study only
     public ResponseEntity<List<CompanyDTO>> findAllCompanies(@RequestParam(value = "name", required = false)String name){
         List<CompanyDTO> companyDTOList = this.companyService.findAllCompanies();
 
@@ -61,7 +63,7 @@ public class CompanyController {
     }
 
     @GetMapping("/companies/{id}")
-    public ResponseEntity<CompanyDTO> getCompanyById(@PathVariable Integer id) {
+    public ResponseEntity<CompanyDTO> getCompanyById(@Validated @PathVariable @Positive Integer id) {
         Optional<CompanyDTO> optCompany = this.companyService.getCompanyById(id);
         if(optCompany.isEmpty()){
             return ResponseEntity.notFound().build();

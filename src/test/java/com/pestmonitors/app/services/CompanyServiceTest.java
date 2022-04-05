@@ -72,7 +72,7 @@ public class CompanyServiceTest {
     @Test
     public void givenWrongIdWhenCompanyServiceFindByIdThenReturnOptionalEmpty(){
         Optional<CompanyDTO> optionalCompanyDTOExpected = Optional.empty();
-        assertEquals(optionalCompanyDTOExpected, this.companyService.getCompanyById(2));
+        assertEquals(optionalCompanyDTOExpected, this.companyService.getCompanyById(1));
     }
 
     @Test
