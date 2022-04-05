@@ -66,6 +66,7 @@ SENSOR_CREATED --> SENSOR_CREATED
         ReadSensor
         UpdateSensor
         DeleteSensor
+        MoveSensor
     end note
 
 COMPANY_CREATED --> [*]

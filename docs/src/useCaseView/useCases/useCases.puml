@@ -10,6 +10,7 @@ usecase UpdateSensor
 usecase DeleteSensor
 usecase AddSensorToMap
 usecase AddSensorToStock
+usecase MoveSensor
 
 usecase ShowState
 usecase PrintState
@@ -39,6 +40,8 @@ DeleteSensor ..> ReadSensor  : "<<include>>"
 
 User --> AddSensorToMap
 User --> AddSensorToStock
+
+User --> MoveSensor
 
 User --> CreateCompany
 CreateCompany ..> ReadCompany : "<<include>>"
